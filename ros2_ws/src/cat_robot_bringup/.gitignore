@@ -1,0 +1,52 @@
+# ROS2 build artifacts
+build/
+install/
+log/
+
+# Python
+__pycache__/
+*.pyc
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+
+# User environment
+.cache/
+.config/
+.local/
+.ssh/
+
+# Docker
+.docker/
+*.log
+
+# Temporary
+tmp/
+# ROS2 build artifacts
+build/
+install/
+log/
+
+# Python
+__pycache__/
+*.pyc
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+
+# User environment
+.cache/
+.config/
+.local/
+.ssh/
+
+# Docker
+.docker/
+*.log
+
+# Temporary
+tmp/

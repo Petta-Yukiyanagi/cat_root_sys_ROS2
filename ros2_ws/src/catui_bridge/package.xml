@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>catui_bridge</name>
+  <version>0.0.1</version>
+  <description>ROS2 to CAT-UI IPC bridge</description>
+  <maintainer email="tomoharusak@gmail.com">user</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_python</buildtool_depend>
+  <depend>rclpy</depend>
+  <depend>catui_msgs</depend> <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Cat Robot System
+Comment=ROS2 + Roomba + LiDAR + CAT UI
+Exec=/bin/bash -lc "/opt/cat_robot/run.sh"
+Terminal=true
+Icon=/opt/cat_robot/icon/cat_robot.png
+Categories=Development;
+StartupNotify=true
