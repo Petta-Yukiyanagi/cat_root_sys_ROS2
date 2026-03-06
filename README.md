@@ -81,6 +81,6 @@ chmod +x install.sh
 ```
 ## システム図
 
-![システム図](./icon/catrobot_Ubuntsu22.04ver.png)
+![システム図](./icon/catrobot_Ubuntsu24.04ver.png)
 ---
 
