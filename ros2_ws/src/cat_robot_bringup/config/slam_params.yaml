@@ -1,0 +1,18 @@
+slam_toolbox:
+  ros__parameters:
+    # 基本設定
+    use_sim_time: false
+    odom_frame: odom
+    base_frame: base_link
+    scan_topic: /scan
+    mode: mapping # 地図作成モード
+
+    # スキャンマッチングの調整（LiDARの性能に合わせて微調整する場所）
+    max_laser_range: 12.0
+    minimum_time_interval: 0.1
+    transform_timeout: 0.2
+    tf_buffer_duration: 30.0
+
+    # 地図更新のしきい値
+    minimum_travel_distance: 0.1
+    minimum_travel_heading: 0.1
