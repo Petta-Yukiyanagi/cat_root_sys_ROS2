@@ -1,3 +1,30 @@
+# Cat Robot ROS2 System
+
+Roomba + YDLidar + ROS2 + Java UI による猫型ロボット制御システム。
+
+## ⚙️ 動作環境 (Prerequisites)
+
+本システムは以下の環境で動作します。
+
+### OS
+- Ubuntu 22.04 LTS
+
+### ROS
+- ROS2 Humble
+
+### ハードウェア
+- iRobot Roomba (Create2互換)
+- YDLidar (CP2102 USB-Serial)
+- USB接続可能なPCまたはRaspberry Pi
+
+### 必須ソフトウェア
+以下は `install.sh` が自動でインストールします。
+
+- git
+- colcon
+- rosdep
+- Java Runtime (OpenJDK17)
+- YDLidar SDK
 ## 🌟 特徴
 - **爆速セットアップ**: 依存関係、udevルール、SDKビルドをすべて自動化するインストーラーを同梱。
 - **安定したデバイス認識**: udevルールにより、USBの抜き差しでシリアルポートが入れ替わる問題を解消。
@@ -15,7 +42,7 @@
 まず、ROS2 Humbleがインストールされていることを確認してください。
 
 ```bash
-git clone [https://github.com/Petta-Yukiyanagi/cat_root_sys_ROS2.git]
+git clone https://github.com/Petta-Yukiyanagi/cat_root_sys_ROS2.git
 cd cat_root_sys_ROS2
 chmod +x install.sh
 ./install.sh
@@ -51,5 +78,7 @@ chmod +x install.sh
 └── ui/                     # 操作用GUIアプリ
     └── catui/CAT-UI-ROS2node/ # Java GUI 本体
 ```
+## システム図
+![システム図](./icon/catrobot_Ubuntsu22.04ver.png)
 ---
 
