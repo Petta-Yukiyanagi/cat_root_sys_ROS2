@@ -16,12 +16,52 @@ echo "[INFO] pre-install: ensure git is installed..."
 sudo apt update
 sudo apt install -y git
 
-# --- ROS2チェック（rosdepやbuildの前でOK） ---
-if [ ! -f /opt/ros/humble/setup.bash ]; then
-  echo "[ERROR] ROS2 Humble not found: /opt/ros/humble/setup.bash"
-  echo "Install ROS2 Humble first, then re-run this installer."
-  exit 1
+# --- ROS2セットアップとビルド（Ubuntu 24.04対応版） ---
+
+ROS_ROOT=""
+
+if [ -f /opt/ros/humble/setup.bash ]; then
+    echo "[INFO] ROS2 Humble found in apt. Using system install."
+    ROS_ROOT="/opt/ros/humble"
+else
+    echo "[INFO] ROS2 Humble not found in apt. Starting Source Build for Ubuntu 24.04..."
+    
+    # [1] 事前準備
+    sudo apt update && sudo apt install -y locales curl gnupg lsb-release software-properties-common
+    sudo locale-gen en_US en_US.UTF-8
+    export LANG=en_US.UTF-8
+    
+    # [2] リポジトリ登録（念のため）
+    sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg
+    echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
+    
+    # [3] 依存関係とビルドツールのインストール
+    sudo apt update && sudo apt install -y python3-flake8-docstrings python3-pip python3-pytest-cov ros-dev-tools python3-flake8-blind-except python3-flake8-builtins python3-flake8-class-newline python3-flake8-comprehensions python3-flake8-deprecated python3-flake8-import-order python3-flake8-quotes python3-pytest-repeat python3-pytest-rerunfailures
+    
+    # [4] ソースダウンロード
+    mkdir -p ~/ros2_humble/src
+    cd ~/ros2_humble
+    vcs import --input https://raw.githubusercontent.com/ros2/ros2/humble/ros2.repos src
+    
+    # [5] 無限ビルド前のHack (重要！)
+    # rosdepが24.04で失敗しないようにジャミング(jammy)と誤認させる
+    export ROS_OS_OVERRIDE=ubuntu:jammy
+    sudo rosdep init 2>/dev/null || true
+    rosdep update
+    rosdep install --from-paths src --ignore-src -r -y --skip-keys "fastcdr rti-connext-dds-6.0.1 urdfdom_headers"
+    
+    echo "[INFO] Temporarily increasing swap size to 4GB..."
+    sudo sed -i 's/CONF_SWAPSIZE=100/CONF_SWAPSIZE=4096/' /etc/dphys-swapfile && sudo systemctl restart dphys-swapfile || true
+
+    echo "[INFO] Starting build... grab a coffee, this will take time."
+    # --parallel-workers 2 を指定して、同時に動くビルド作業を2つに絞ります
+    colcon build --symlink-install --cmake-args -DBUILD_TESTING=OFF --parallel-workers 2
+    
+    ROS_ROOT="$HOME/ros2_humble/install"
 fi
+
+# 最後に、以降の処理で $ROS_ROOT を使うように書き換える
+source $ROS_ROOT/setup.bash
 
 # =========================================================
 # install directory
@@ -144,7 +184,7 @@ echo "[INFO] building ros2_ws..."
 
 cd $INSTALL_DIR/src/ros2_ws
 
-source /opt/ros/humble/setup.bash
+source $ROS_ROOT/setup.bash
 
 rosdep install --from-paths src --ignore-src -r -y
 
@@ -157,7 +197,7 @@ colcon build --symlink-install --parallel-workers $(nproc)
 echo "[INFO] applying roomba baud fix..."
 
 sudo sed -i 's/# baud: 115200/baud: 115200/' \
-/opt/ros/humble/share/create_bringup/config/default.yaml
+$ROS_ROOT/share/create_bringup/config/default.yaml
 
 # =========================================================
 # CAT UI setup
@@ -178,11 +218,11 @@ chmod 1777 data/ipc
 
 echo "[INFO] updating bashrc..."
 
-grep -qxF "source /opt/ros/humble/setup.bash" ~/.bashrc || \
-echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
+grep -qxF "source $ROS_ROOT/setup.bash" ~/.bashrc || \
+echo "source $ROS_ROOT/setup.bash" >> ~/.bashrc
 
-grep -qxF "source /opt/cat_robot/src/ros2_ws/install/setup.bash" ~/.bashrc || \
-echo "source /opt/cat_robot/src/ros2_ws/install/setup.bash" >> ~/.bashrc
+grep -qxF "source $INSTALL_DIR/src/ros2_ws/install/setup.bash" ~/.bashrc || \
+echo "source $INSTALL_DIR/src/ros2_ws/install/setup.bash" >> ~/.bashrc
 
 # =========================================================
 # install run script
@@ -241,7 +281,7 @@ echo "================================="
 echo " ROS2 CHECK"
 echo "================================="
 
-source /opt/ros/humble/setup.bash
+source $ROS_ROOT/setup.bash
 ros2 doctor || true
 
 echo "[IMPORTANT] You must log out / log in (or reboot) for dialout group to take effect."
