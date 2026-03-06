@@ -12,8 +12,8 @@ trap pause_exit EXIT
 # --------------------------------------------------
 # ROS環境
 # --------------------------------------------------
-source /opt/ros/humble/setup.bash
-source /opt/cat_robot/src/ros2_ws/install/setup.bash
+source $ROS_ROOT/setup.bash
+source $INSTALL_DIR/src/ros2_ws/install/setup.bash
 
 # --------------------------------------------------
 # デバイス接続確認
@@ -46,7 +46,7 @@ sleep 3
 # --------------------------------------------------
 echo "[INFO] CAT-UI 起動"
 
-cd /opt/cat_robot/src/ui/CAT-UI-ROS2node
+cd $INSTALL_DIR/src/ui/CAT-UI-ROS2node
 
 # UIをメインプロセスとして実行
 if [ -f "./CAT-UI" ]; then
