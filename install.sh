@@ -127,6 +127,8 @@ echo "[INFO] installing packages..."
 sudo apt update
 
 sudo apt install -y \
+  setserial \
+  python3-serial \
   openjdk-17-jre \
   wget \
   unzip \

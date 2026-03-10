@@ -13,6 +13,14 @@ function pause_exit(){
 trap pause_exit EXIT
 
 # --------------------------------------------------
+# LiDAR の通信最適化 (Checksum エラー対策)
+# --------------------------------------------------
+if [ -e /dev/lidar ]; then
+  echo "[INFO] LiDAR の低遅延モードを設定中..."
+  sudo setserial /dev/lidar low_latency
+fi
+
+# --------------------------------------------------
 # ROS環境
 # --------------------------------------------------
 source $ROS_ROOT/setup.bash
