@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
-set -euo pipefail
+set -eo pipefail
+
+ROS_ROOT="/home/user/ros2_humble/install"
+INSTALL_DIR="/opt/cat_robot"
 
 function pause_exit(){
   echo -e "\n=======================================\n 終了しました。Enterで閉じます。\n======================================="
@@ -46,7 +49,7 @@ sleep 3
 # --------------------------------------------------
 echo "[INFO] CAT-UI 起動"
 
-cd $INSTALL_DIR/src/ui/CAT-UI-ROS2node
+cd $INSTALL_DIR/src/ui/catui/CAT-UI-ROS2node
 
 # UIをメインプロセスとして実行
 if [ -f "./CAT-UI" ]; then

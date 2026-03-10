@@ -1,67 +1,97 @@
 #!/usr/bin/env bash
-set -euo pipefail
+set -eo pipefail
+
+# --- 【ここから】24.04対策・環境設定 ---
+export ROS_OS_OVERRIDE=ubuntu:jammy
+export ROS_DISTRO=humble
+export PYTHONWARNINGS="ignore"
+export PIP_BREAK_SYSTEM_PACKAGES=1
 
 echo "================================="
 echo " CAT ROBOT SYSTEM INSTALLER"
 echo "================================="
 
-VERSION="1.0.0"
+VERSION="1.1.0"
 echo "CAT ROBOT INSTALLER v$VERSION"
 
 INSTALL_DIR=/opt/cat_robot
 REPO_URL="https://github.com/Petta-Yukiyanagi/cat_root_sys_ROS2"
 
-# --- 最初の方に追加（cloneより前） ---
-echo "[INFO] pre-install: ensure git is installed..."
+# =========================================================
+# detect ubuntu version
+# =========================================================
+
+UBUNTU_VER=$(grep VERSION_ID /etc/os-release | cut -d '"' -f2)
+echo "[INFO] Ubuntu version: $UBUNTU_VER"
+
+# 事前準備
+echo "[INFO] pre-install: updating tools..."
 sudo apt update
-sudo apt install -y git
 
-# --- ROS2セットアップとビルド（Ubuntu 24.04対応版） ---
+sudo apt install -y \
+ git \
+ python3-pip \
+ python3-colcon-common-extensions \
+ python3-rosdep \
+ python3-vcstool \
+ ros-dev-tools
 
+# rosdep global setup
+if [ ! -f /etc/ros/rosdep/sources.list.d/20-default.list ]; then
+    sudo rosdep init
+fi
+
+rosdep update
+# ROS2 Humble セットアップ
 ROS_ROOT=""
 
 if [ -f /opt/ros/humble/setup.bash ]; then
-    echo "[INFO] ROS2 Humble found in apt. Using system install."
+    echo "[INFO] ROS2 Humble found (apt)"
     ROS_ROOT="/opt/ros/humble"
-else
-    echo "[INFO] ROS2 Humble not found in apt. Starting Source Build for Ubuntu 24.04..."
-    
-    # [1] 事前準備
-    sudo apt update && sudo apt install -y locales curl gnupg lsb-release software-properties-common
-    sudo locale-gen en_US en_US.UTF-8
-    export LANG=en_US.UTF-8
-    
-    # [2] リポジトリ登録（念のため）
-    sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg
-    echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
-    
-    # [3] 依存関係とビルドツールのインストール
-    sudo apt update && sudo apt install -y python3-flake8-docstrings python3-pip python3-pytest-cov ros-dev-tools python3-flake8-blind-except python3-flake8-builtins python3-flake8-class-newline python3-flake8-comprehensions python3-flake8-deprecated python3-flake8-import-order python3-flake8-quotes python3-pytest-repeat python3-pytest-rerunfailures
-    
-    # [4] ソースダウンロード
-    mkdir -p ~/ros2_humble/src
-    cd ~/ros2_humble
-    vcs import --input https://raw.githubusercontent.com/ros2/ros2/humble/ros2.repos src
-    
-    # [5] 無限ビルド前のHack (重要！)
-    # rosdepが24.04で失敗しないようにジャミング(jammy)と誤認させる
-    export ROS_OS_OVERRIDE=ubuntu:jammy
-    sudo rosdep init 2>/dev/null || true
-    rosdep update
-    rosdep install --from-paths src --ignore-src -r -y --skip-keys "fastcdr rti-connext-dds-6.0.1 urdfdom_headers"
-    
-    echo "[INFO] Temporarily increasing swap size to 4GB..."
-    sudo sed -i 's/CONF_SWAPSIZE=100/CONF_SWAPSIZE=4096/' /etc/dphys-swapfile && sudo systemctl restart dphys-swapfile || true
 
-    echo "[INFO] Starting build... grab a coffee, this will take time."
-    # --parallel-workers 2 を指定して、同時に動くビルド作業を2つに絞ります
-    colcon build --symlink-install --cmake-args -DBUILD_TESTING=OFF --parallel-workers 2
+elif [ -f "$HOME/ros2_humble/install/setup.bash" ]; then
+    echo "[INFO] ROS2 Humble found (source)"
+    ROS_ROOT="$HOME/ros2_humble/install"
+else
+    echo "[INFO] ROS2 Humble not found. Starting Source Build for 24.04..."
     
+    mkdir -p ~/ros2_humble/src
+    cd ~/ros2_humble || exit 1
+    # 前回の権限トラブルをリセット
+    sudo chown -R $USER:$USER ~/ros2_humble 2>/dev/null || true
+
+    # ソース取得（未取得の場合のみ）
+    mkdir -p src
+    if [ -z "$(ls -A src 2>/dev/null)" ]; then
+        echo "[INFO] importing ROS2 source..."
+        vcs import src < https://raw.githubusercontent.com/ros2/ros2/humble/ros2.repos
+    fi
+    
+ rosdep install --os=ubuntu:jammy --from-paths src --ignore-src -r -y \
+      --skip-keys "fastcdr rti-connext-dds-6.0.1 urdfdom_headers" \
+      2>&1 | tee ~/ros2_humble/rosdep.log || true
+    # スワップ設定
+    echo "[INFO] Ensuring 4GB swap..."
+    if [ -f /etc/dphys-swapfile ]; then
+        sudo sed -i 's/CONF_SWAPSIZE=100/CONF_SWAPSIZE=4096/' /etc/dphys-swapfile
+        sudo systemctl restart dphys-swapfile
+    fi
+
+    echo "[INFO] Starting build... (24.04 Optimized)"
+    # 24.04でコケやすいrviz関連をスキップしつつ、エラーが出ても最後まで強行する設定
+    colcon build \
+        --symlink-install \
+        --cmake-args -DBUILD_TESTING=OFF \
+        --parallel-workers 2 \
+        --continue-on-error \
+        --packages-skip rviz_ogre_vendor rviz_common rviz_default_plugins rviz_rendering rviz2 \
+        2>&1 | tee -a ~/ros2_humble/install_final.log \
+    || true    
     ROS_ROOT="$HOME/ros2_humble/install"
 fi
 
-# 最後に、以降の処理で $ROS_ROOT を使うように書き換える
-source $ROS_ROOT/setup.bash
+# 環境反映
+source "$ROS_ROOT/setup.bash" || true
 
 # =========================================================
 # install directory
@@ -106,19 +136,18 @@ sudo apt install -y \
   cmake \
   python3-colcon-common-extensions \
   python3-rosdep \
-  ros-humble-slam-toolbox \
-  libusb-1.0-0-dev
+  libusb-1.0-0-dev \
+  libopencv-dev
+
+# slam_toolbox only available via apt on 22.04
+if [ "$UBUNTU_VER" = "22.04" ]; then
+    sudo apt install -y ros-humble-slam-toolbox
+else
+    echo "[INFO] Ubuntu 24.04 detected: slam_toolbox will be built via rosdep"
+fi
 
 
 
-# =========================================================
-# rosdep setup
-# =========================================================
-
-echo "[INFO] rosdep setup..."
-
-sudo rosdep init 2>/dev/null || true
-rosdep update
 
 # =========================================================
 # USB / serial stable naming (udev) + permission
@@ -159,7 +188,7 @@ echo "[INFO] udev rules installed. If devices are plugged in, /dev/roomba and /d
 echo "[INFO] building YDLidar SDK..."
 
 if [ -d "sdk/YDLidar-SDK" ]; then
-  cd sdk/YDLidar-SDK
+  cd sdk/YDLidar-SDK || exit 1
 else
   echo "[ERROR] YDLidar-SDK directory not found"
   exit 1
@@ -186,9 +215,17 @@ cd $INSTALL_DIR/src/ros2_ws
 
 source $ROS_ROOT/setup.bash
 
-rosdep install --from-paths src --ignore-src -r -y
+rosdep install --os=ubuntu:jammy --from-paths src --ignore-src -r -y \
+  --skip-keys "fastcdr rti-connext-dds-6.0.1 urdfdom_headers" \
+  2>&1 | tee ~/ros2_ws_rosdep.log || true
 
-colcon build --symlink-install --parallel-workers $(nproc)
+colcon build \
+  --symlink-install \
+  --parallel-workers $(nproc) \
+  --packages-skip slam_toolbox
+if [ -f ~/ros2_humble/install/setup.bash ]; then
+    ROS_ROOT="$HOME/ros2_humble/install"
+fi
 
 # =========================================================
 # Roomba baud fix
@@ -196,8 +233,14 @@ colcon build --symlink-install --parallel-workers $(nproc)
 
 echo "[INFO] applying roomba baud fix..."
 
-sudo sed -i 's/# baud: 115200/baud: 115200/' \
-$ROS_ROOT/share/create_bringup/config/default.yaml
+BAUD_FILE="$ROS_ROOT/share/create_bringup/config/default.yaml"
+
+if [ -f "$BAUD_FILE" ]; then
+    sudo sed -i 's/# baud: 115200/baud: 115200/' "$BAUD_FILE"
+    echo "[INFO] Roomba baud fixed"
+else
+    echo "[WARN] create_bringup config not found, skipping baud fix"
+fi
 
 # =========================================================
 # CAT UI setup
@@ -205,7 +248,18 @@ $ROS_ROOT/share/create_bringup/config/default.yaml
 
 echo "[INFO] configuring CAT UI..."
 
-cd $INSTALL_DIR/src/ui/CAT-UI-ROS2node
+cd $INSTALL_DIR/src
+
+if [ -d "ui/CAT-UI-ROS2node" ]; then
+    cd ui/CAT-UI-ROS2node
+elif [ -d "ui/catui/CAT-UI-ROS2node" ]; then
+    cd ui/catui/CAT-UI-ROS2node
+elif [ -d "CAT-UI-ROS2node" ]; then
+    cd CAT-UI-ROS2node
+else
+    echo "[ERROR] CAT-UI-ROS2node not found"
+    exit 1
+fi
 
 chmod +x CAT-UI
 
@@ -218,8 +272,8 @@ chmod 1777 data/ipc
 
 echo "[INFO] updating bashrc..."
 
-grep -qxF "source $ROS_ROOT/setup.bash" ~/.bashrc || \
-echo "source $ROS_ROOT/setup.bash" >> ~/.bashrc
+grep -qxF "source ~/ros2_humble/install/setup.bash" ~/.bashrc || \
+echo "source ~/ros2_humble/install/setup.bash" >> ~/.bashrc
 
 grep -qxF "source $INSTALL_DIR/src/ros2_ws/install/setup.bash" ~/.bashrc || \
 echo "source $INSTALL_DIR/src/ros2_ws/install/setup.bash" >> ~/.bashrc
@@ -239,13 +293,13 @@ chmod +x $INSTALL_DIR/run.sh
 
 echo "[INFO] installing desktop launcher..."
 
-mkdir -p ~/Desktop
+DESKTOP_DIR=$(xdg-user-dir DESKTOP)
 
-cp $INSTALL_DIR/src/cat-ui-system.desktop ~/Desktop/
+mkdir -p "$DESKTOP_DIR"
+cp $INSTALL_DIR/src/cat-ui-system.desktop "$DESKTOP_DIR/"
+chmod +x "$DESKTOP_DIR/cat-ui-system.desktop"
 
-chmod +x ~/Desktop/cat-ui-system.desktop
-
-gio set ~/Desktop/cat-ui-system.desktop metadata::trusted true || true
+gio set "$DESKTOP_DIR/cat-ui-system.desktop" metadata::trusted true || true
 
 # =========================================================
 
