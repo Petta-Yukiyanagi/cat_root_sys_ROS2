@@ -9,7 +9,7 @@ def generate_launch_description():
         name='catui_bridge',
         output='screen',
         parameters=[{
-            'ipc_root': '/opt/cat_robot/src/ui/CAT-UI-ROS2node/data/ipc'
+            'ipc_root': '/opt/cat_robot/src/ui/catui/CAT-UI-ROS2node/data/ipc'
         }]
     )
 

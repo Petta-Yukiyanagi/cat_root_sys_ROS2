@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 set -eo pipefail
 
+# スクリプトがあるディレクトリの絶対パスを取得
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
 ROS_ROOT="/home/user/ros2_humble/install"
 INSTALL_DIR="/opt/cat_robot"
 
@@ -25,6 +28,10 @@ fi
 # --------------------------------------------------
 source $ROS_ROOT/setup.bash
 source $INSTALL_DIR/src/ros2_ws/install/setup.bash
+
+# === 通信設定（スクリプトと同じ階層のファイルを指定） ===
+export RMW_IMPLEMENTATION=rmw_fastrtps_cpp
+export FASTRTPS_DEFAULT_PROFILES_FILE="$SCRIPT_DIR/fastdds_relay.xml"
 
 # --------------------------------------------------
 # デバイス接続確認
@@ -57,16 +64,14 @@ sleep 3
 # --------------------------------------------------
 echo "[INFO] CAT-UI 起動"
 
-<<<<<<< HEAD
-cd $INSTALL_DIR/src/ui/CAT-UI-ROS2node
-=======
-cd $INSTALL_DIR/src/ui/catui/CAT-UI-ROS2node
->>>>>>> ubuntu24.04
+# コンフリクト箇所を整理（新しいパスに統一）
+cd "$INSTALL_DIR/src/ui/catui/CAT-UI-ROS2node"
 
 # UIをメインプロセスとして実行
 if [ -f "./CAT-UI" ]; then
+chmod +x ./CAT-UI
   ./CAT-UI
 else
-  echo "[ERROR] CAT-UI 実行ファイルが見つかりません。"
+  echo "[ERROR] CAT-UI 実行ファイルが見つかりません。パスを確認してください: $(pwd)"
   exit 1
 fi

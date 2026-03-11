@@ -12,7 +12,7 @@ class CatUIBridge(Node):
 
         self.declare_parameter(
             'ipc_root',
-            '/opt/catui/CAT-UI-ROS2node/data/ipc'
+            '/opt/cat_robot/src/ui/catui/CAT-UI-ROS2node/data/ipc'
         )
         self.ipc_root = self.get_parameter(
             'ipc_root'
