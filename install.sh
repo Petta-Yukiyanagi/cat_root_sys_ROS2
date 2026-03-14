@@ -149,7 +149,7 @@ cd "$HOME/ros2_humble" || exit 1
 # ros2.repos経由で既にダウンロードされているか確認し、無ければピンポイントでクローン
 if [ ! -d "src/robot_state_publisher" ] && [ ! -d "src/ros2/robot_state_publisher" ]; then
     echo "[INFO] cloning robot_state_publisher..."
-    git clone https://github.com/ros2/robot_state_publisher.git -b humble src/robot_state_publisher
+    git clone https://github.com/ros2/robot_state_publisher.git -b ros2 src/robot_state_publisher
 fi
 
 # まだインストールされていなければビルド
