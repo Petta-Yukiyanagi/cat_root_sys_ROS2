@@ -141,6 +141,31 @@ if [ -f "$DDS_WS/install/setup.bash" ]; then
 fi
 
 # =========================================================
+# build missing ROS2 core packages (robot_state_publisher)
+# =========================================================
+echo "[INFO] checking robot_state_publisher..."
+cd "$HOME/ros2_humble" || exit 1
+
+# ros2.repos経由で既にダウンロードされているか確認し、無ければピンポイントでクローン
+if [ ! -d "src/robot_state_publisher" ] && [ ! -d "src/ros2/robot_state_publisher" ]; then
+    echo "[INFO] cloning robot_state_publisher..."
+    git clone https://github.com/ros2/robot_state_publisher.git -b humble src/robot_state_publisher
+fi
+
+# まだインストールされていなければビルド
+if [ ! -d "$HOME/ros2_humble/install/robot_state_publisher" ]; then
+    echo "[INFO] building robot_state_publisher..."
+    export ROS_OS_OVERRIDE=ubuntu:jammy
+    export ROS_DISTRO=humble
+    source "$ROS_ROOT/setup.bash" || true
+    colcon build --symlink-install --packages-up-to robot_state_publisher --cmake-args -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTING=OFF --parallel-workers 2
+    
+    # ビルドしたものを現在の環境に即反映
+    source "$HOME/ros2_humble/install/setup.bash" || true
+    ROS_ROOT="$HOME/ros2_humble/install"
+fi
+
+# =========================================================
 # install directory
 # =========================================================
 
