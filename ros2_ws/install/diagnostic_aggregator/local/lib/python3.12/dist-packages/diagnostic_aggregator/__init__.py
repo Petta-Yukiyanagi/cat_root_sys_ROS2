@@ -1,1 +1,0 @@
-/opt/cat_robot/src/ros2_ws/src/diagnostics/diagnostic_aggregator/diagnostic_aggregator/__init__.py

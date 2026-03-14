@@ -1,9 +1,0 @@
-# CMake generated Testfile for 
-# Source directory: /opt/cat_robot/src/ros2_ws/src/diagnostics/diagnostic_remote_logging
-# Build directory: /opt/cat_robot/src/ros2_ws/build/diagnostic_remote_logging
-# 
-# This file includes the relevant testing commands required for 
-# testing this directory and lists subdirectories to be tested as well.
-add_test([=[unit_tests]=] "/usr/bin/python3" "-u" "/home/user/ros2_humble/install/ament_cmake_test/share/ament_cmake_test/cmake/run_test.py" "/opt/cat_robot/src/ros2_ws/build/diagnostic_remote_logging/test_results/diagnostic_remote_logging/unit_tests.gtest.xml" "--package-name" "diagnostic_remote_logging" "--output-file" "/opt/cat_robot/src/ros2_ws/build/diagnostic_remote_logging/ament_cmake_gtest/unit_tests.txt" "--command" "/opt/cat_robot/src/ros2_ws/build/diagnostic_remote_logging/unit_tests" "--gtest_output=xml:/opt/cat_robot/src/ros2_ws/build/diagnostic_remote_logging/test_results/diagnostic_remote_logging/unit_tests.gtest.xml")
-set_tests_properties([=[unit_tests]=] PROPERTIES  LABELS "gtest" REQUIRED_FILES "/opt/cat_robot/src/ros2_ws/build/diagnostic_remote_logging/unit_tests" TIMEOUT "60" WORKING_DIRECTORY "/opt/cat_robot/src/ros2_ws/build/diagnostic_remote_logging" _BACKTRACE_TRIPLES "/home/user/ros2_humble/install/ament_cmake_test/share/ament_cmake_test/cmake/ament_add_test.cmake;125;add_test;/home/user/ros2_humble/install/ament_cmake_gtest/share/ament_cmake_gtest/cmake/ament_add_gtest_test.cmake;86;ament_add_test;/home/user/ros2_humble/install/ament_cmake_gtest/share/ament_cmake_gtest/cmake/ament_add_gtest.cmake;93;ament_add_gtest_test;/opt/cat_robot/src/ros2_ws/src/diagnostics/diagnostic_remote_logging/CMakeLists.txt;60;ament_add_gtest;/opt/cat_robot/src/ros2_ws/src/diagnostics/diagnostic_remote_logging/CMakeLists.txt;0;")
-subdirs("gtest")

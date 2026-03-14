@@ -1,8 +1,0 @@
-{
-  "package_name": "wiimote_msgs",
-  "non_idl_tuples": [
-    "/opt/cat_robot/src/ros2_ws/src/joystick_drivers/wiimote_msgs:msg/IrSourceInfo.msg",
-    "/opt/cat_robot/src/ros2_ws/src/joystick_drivers/wiimote_msgs:msg/State.msg",
-    "/opt/cat_robot/src/ros2_ws/src/joystick_drivers/wiimote_msgs:msg/TimedSwitch.msg"
-  ]
-}

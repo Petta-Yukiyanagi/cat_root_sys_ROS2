@@ -1,3 +1,0 @@
-/opt/cat_robot/src/ros2_ws/install/diagnostic_remote_logging/lib/libinflux_component.so
-/opt/cat_robot/src/ros2_ws/install/diagnostic_remote_logging/share/diagnostic_remote_logging/cmake/export_influx_componentExport.cmake
-/opt/cat_robot/src/ros2_ws/install/diagnostic_remote_logging/share/diagnostic_remote_logging/cmake/export_influx_componentExport-noconfig.cmake

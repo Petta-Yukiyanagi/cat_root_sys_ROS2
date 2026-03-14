@@ -1,1 +1,0 @@
-/opt/cat_robot/src/ros2_ws/src/create_robot/create_msgs/msg/MotorSetpoint.msg

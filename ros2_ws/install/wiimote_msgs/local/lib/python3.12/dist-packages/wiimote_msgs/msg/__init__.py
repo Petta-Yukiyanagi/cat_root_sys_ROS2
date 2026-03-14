@@ -1,1 +1,0 @@
-/opt/cat_robot/src/ros2_ws/build/wiimote_msgs/rosidl_generator_py/wiimote_msgs/msg/__init__.py

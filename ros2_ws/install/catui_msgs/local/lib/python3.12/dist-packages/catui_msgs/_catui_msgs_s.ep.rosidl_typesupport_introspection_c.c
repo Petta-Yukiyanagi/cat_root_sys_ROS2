@@ -1,1 +1,0 @@
-/opt/cat_robot/src/ros2_ws/build/catui_msgs/rosidl_generator_py/catui_msgs/_catui_msgs_s.ep.rosidl_typesupport_introspection_c.c

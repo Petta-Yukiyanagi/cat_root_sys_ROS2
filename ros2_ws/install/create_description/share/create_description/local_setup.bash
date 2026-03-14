@@ -1,1 +1,0 @@
-/opt/cat_robot/src/ros2_ws/build/create_description/ament_cmake_environment_hooks/local_setup.bash

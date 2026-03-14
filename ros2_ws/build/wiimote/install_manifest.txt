@@ -1,4 +1,0 @@
-/opt/cat_robot/src/ros2_ws/install/wiimote/lib/libwiimote_lib.so
-/opt/cat_robot/src/ros2_ws/install/wiimote/lib/libteleop_wiimote.so
-/opt/cat_robot/src/ros2_ws/install/wiimote/share/wiimote/cmake/export_wiimoteExport.cmake
-/opt/cat_robot/src/ros2_ws/install/wiimote/share/wiimote/cmake/export_wiimoteExport-noconfig.cmake

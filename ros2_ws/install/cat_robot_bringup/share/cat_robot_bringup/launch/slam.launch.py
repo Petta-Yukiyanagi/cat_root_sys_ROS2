@@ -1,1 +1,0 @@
-/opt/cat_robot/src/ros2_ws/build/cat_robot_bringup/launch/slam.launch.py

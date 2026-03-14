@@ -1,1 +1,0 @@
-/opt/cat_robot/src/ros2_ws/build/create_msgs/rosidl_generator_cpp/create_msgs/msg/detail/cliff__builder.hpp

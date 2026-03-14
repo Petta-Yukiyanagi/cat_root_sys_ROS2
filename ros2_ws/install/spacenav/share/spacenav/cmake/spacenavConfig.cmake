@@ -1,1 +1,0 @@
-/opt/cat_robot/src/ros2_ws/build/spacenav/ament_cmake_core/spacenavConfig.cmake

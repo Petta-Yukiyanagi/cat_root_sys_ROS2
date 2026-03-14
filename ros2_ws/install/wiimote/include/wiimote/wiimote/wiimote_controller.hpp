@@ -1,1 +1,0 @@
-/opt/cat_robot/src/ros2_ws/src/joystick_drivers/wiimote/include/wiimote/wiimote_controller.hpp

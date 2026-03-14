@@ -1,1 +1,0 @@
-/opt/cat_robot/src/ros2_ws/build/catui_msgs/rosidl_generator_rs/catui_msgs/rust/src/lib.rs

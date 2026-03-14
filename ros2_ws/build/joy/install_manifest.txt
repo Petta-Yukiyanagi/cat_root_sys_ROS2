@@ -1,6 +1,0 @@
-/opt/cat_robot/src/ros2_ws/install/joy/lib/libjoy.so
-/opt/cat_robot/src/ros2_ws/install/joy/lib/libgame_controller.so
-/opt/cat_robot/src/ros2_ws/install/joy/share/joy/cmake/export_joyExport.cmake
-/opt/cat_robot/src/ros2_ws/install/joy/share/joy/cmake/export_joyExport-noconfig.cmake
-/opt/cat_robot/src/ros2_ws/install/joy/share/joy/cmake/export_game_controllerExport.cmake
-/opt/cat_robot/src/ros2_ws/install/joy/share/joy/cmake/export_game_controllerExport-noconfig.cmake

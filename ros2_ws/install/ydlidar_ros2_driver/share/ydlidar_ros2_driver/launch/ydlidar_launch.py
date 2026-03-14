@@ -1,1 +1,0 @@
-/opt/cat_robot/src/ros2_ws/src/ydlidar_ros2_driver/launch/ydlidar_launch.py

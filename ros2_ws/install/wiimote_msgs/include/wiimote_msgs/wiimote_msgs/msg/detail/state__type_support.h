@@ -1,1 +1,0 @@
-/opt/cat_robot/src/ros2_ws/build/wiimote_msgs/rosidl_generator_c/wiimote_msgs/msg/detail/state__type_support.h

@@ -1,1 +1,0 @@
-/opt/cat_robot/src/ros2_ws/build/catui_msgs/rosidl_generator_c/catui_msgs/msg/rosidl_generator_c__visibility_control.h

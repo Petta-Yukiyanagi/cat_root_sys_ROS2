@@ -1,1 +1,0 @@
-/opt/cat_robot/src/ros2_ws/build/create_msgs/rosidl_generator_py/create_msgs/_create_msgs_s.ep.rosidl_typesupport_c.c

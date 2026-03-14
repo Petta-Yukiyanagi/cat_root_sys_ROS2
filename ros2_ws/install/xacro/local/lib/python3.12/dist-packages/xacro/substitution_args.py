@@ -1,1 +1,0 @@
-/opt/cat_robot/src/ros2_ws/src/xacro/xacro/substitution_args.py

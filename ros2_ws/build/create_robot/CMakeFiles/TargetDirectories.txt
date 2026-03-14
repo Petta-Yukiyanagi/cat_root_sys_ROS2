@@ -1,9 +1,0 @@
-/opt/cat_robot/src/ros2_ws/build/create_robot/CMakeFiles/uninstall.dir
-/opt/cat_robot/src/ros2_ws/build/create_robot/CMakeFiles/create_robot_uninstall.dir
-/opt/cat_robot/src/ros2_ws/build/create_robot/CMakeFiles/test.dir
-/opt/cat_robot/src/ros2_ws/build/create_robot/CMakeFiles/edit_cache.dir
-/opt/cat_robot/src/ros2_ws/build/create_robot/CMakeFiles/rebuild_cache.dir
-/opt/cat_robot/src/ros2_ws/build/create_robot/CMakeFiles/list_install_components.dir
-/opt/cat_robot/src/ros2_ws/build/create_robot/CMakeFiles/install.dir
-/opt/cat_robot/src/ros2_ws/build/create_robot/CMakeFiles/install/local.dir
-/opt/cat_robot/src/ros2_ws/build/create_robot/CMakeFiles/install/strip.dir

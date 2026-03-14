@@ -1,1 +1,0 @@
-/opt/cat_robot/src/ros2_ws/build/wiimote/ament_cmake_core/wiimoteConfig-version.cmake

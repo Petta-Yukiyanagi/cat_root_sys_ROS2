@@ -1,1 +1,0 @@
-/opt/cat_robot/src/ros2_ws/build/catui_msgs/rosidl_typesupport_introspection_c/catui_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h

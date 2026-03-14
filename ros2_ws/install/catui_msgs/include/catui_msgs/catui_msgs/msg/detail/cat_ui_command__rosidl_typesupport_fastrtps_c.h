@@ -1,1 +1,0 @@
-/opt/cat_robot/src/ros2_ws/build/catui_msgs/rosidl_typesupport_fastrtps_c/catui_msgs/msg/detail/cat_ui_command__rosidl_typesupport_fastrtps_c.h

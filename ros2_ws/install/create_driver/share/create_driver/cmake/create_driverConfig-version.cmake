@@ -1,1 +1,0 @@
-/opt/cat_robot/src/ros2_ws/build/create_driver/ament_cmake_core/create_driverConfig-version.cmake

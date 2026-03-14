@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/opt/cat_robot/src/ros2_ws/build/wiimote_msgs/rosidl_generator_py/wiimote_msgs/wiimote_msgs_s__rosidl_typesupport_introspection_c.cpython-312-aarch64-linux-gnu.so" "TARGETS" "wiimote_msgs__rosidl_typesupport_introspection_c__pyext" "DESTINATION" "local/lib/python3.12/dist-packages/wiimote_msgs")

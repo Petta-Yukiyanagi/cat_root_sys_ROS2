@@ -1,1 +1,0 @@
-/opt/cat_robot/src/ros2_ws/build/catui_msgs/ament_cmake_python/catui_msgs/catui_msgs.egg-info/top_level.txt

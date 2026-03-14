@@ -1,1 +1,0 @@
-/opt/cat_robot/src/ros2_ws/build/self_test/ament_cmake_core/self_testConfig-version.cmake

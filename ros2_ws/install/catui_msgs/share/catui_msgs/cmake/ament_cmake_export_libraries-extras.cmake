@@ -1,1 +1,0 @@
-/opt/cat_robot/src/ros2_ws/build/catui_msgs/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake

@@ -1,1 +1,0 @@
-/opt/cat_robot/src/ros2_ws/build/create_msgs/ament_cmake_python/create_msgs/create_msgs.egg-info/dependency_links.txt
