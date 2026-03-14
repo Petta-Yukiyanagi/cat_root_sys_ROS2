@@ -29,9 +29,14 @@ fi
 source $ROS_ROOT/setup.bash
 source $INSTALL_DIR/src/ros2_ws/install/setup.bash
 
+<<<<<<< Updated upstream
 # === 通信設定（スクリプトと同じ階層のファイルを指定） ===
 export RMW_IMPLEMENTATION=rmw_fastrtps_cpp
 export FASTRTPS_DEFAULT_PROFILES_FILE="$SCRIPT_DIR/fastdds_relay.xml"
+=======
+export CYCLONEDDS_URI="file:///opt/cat_robot/src/cyclonedds.xml"
+export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
+>>>>>>> Stashed changes
 
 # --------------------------------------------------
 # デバイス接続確認
@@ -64,8 +69,12 @@ sleep 3
 # --------------------------------------------------
 echo "[INFO] CAT-UI 起動"
 
+<<<<<<< Updated upstream
 # コンフリクト箇所を整理（新しいパスに統一）
 cd "$INSTALL_DIR/src/ui/catui/CAT-UI-ROS2node"
+=======
+cd $INSTALL_DIR/src/ui/catui/CAT-UI-ROS2node
+>>>>>>> Stashed changes
 
 # UIをメインプロセスとして実行
 if [ -f "./CAT-UI" ]; then

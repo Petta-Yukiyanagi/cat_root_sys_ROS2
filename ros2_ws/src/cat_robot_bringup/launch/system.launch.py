@@ -20,11 +20,13 @@ def generate_launch_description():
     ui = get_launch_file('ui_bridge.launch.py')
     roomba = get_launch_file('roomba.launch.py')
     lidar = get_launch_file('lidar.launch.py')
+    robot_state = get_launch_file('robot_state.launch.py')
     #slam = get_launch_file('slam.launch.py')
 
     return LaunchDescription([
         ui,
         roomba,
         lidar,
+        robot_state,
         #slam
     ])

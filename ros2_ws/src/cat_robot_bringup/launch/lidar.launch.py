@@ -31,4 +31,8 @@ def generate_launch_description():
         arguments=['0', '0', '0.02', '0', '0', '0', 'base_link', 'laser_frame']
     )
 
+<<<<<<< Updated upstream
     return LaunchDescription([lidar_node, laser_tf])
+=======
+    return LaunchDescription([lidar_node, laser_tf])
+>>>>>>> Stashed changes

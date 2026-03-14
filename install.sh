@@ -28,6 +28,17 @@ echo "[INFO] Ubuntu version: $UBUNTU_VER"
 echo "[INFO] pre-install: updating tools..."
 sudo apt update
 
+# =========================================================
+# setup time synchronization (chrony)
+# =========================================================
+echo "[INFO] configuring time synchronization..."
+sudo apt update
+sudo apt install -y chrony
+sudo systemctl enable chrony
+sudo systemctl start chrony
+# 強制的に即時同期を実行
+sudo chronyc makestep
+
 sudo apt install -y \
  git \
  python3-pip \
@@ -92,6 +103,42 @@ fi
 
 # 環境反映
 source "$ROS_ROOT/setup.bash" || true
+
+# =========================================================
+# build Cyclone DDS from source
+# =========================================================
+echo "[INFO] checking Cyclone DDS..."
+
+# 既にapt等でROS_ROOTが/opt/ros/humbleになっている場合は、ワークスペースを作成
+if [ "$ROS_ROOT" = "/opt/ros/humble" ]; then
+    DDS_WS="$HOME/ros2_humble"
+    mkdir -p "$DDS_WS/src"
+else
+    DDS_WS="$HOME/ros2_humble"
+fi
+
+cd "$DDS_WS" || exit 1
+
+if [ ! -d "src/cyclonedds" ]; then
+    echo "[INFO] cloning cyclonedds..."
+    git clone https://github.com/eclipse-cyclonedds/cyclonedds.git -b releases/0.10.x src/cyclonedds
+fi
+
+if [ ! -d "src/rmw_cyclonedds" ]; then
+    echo "[INFO] cloning rmw_cyclonedds..."
+    git clone https://github.com/ros2/rmw_cyclonedds.git -b humble src/rmw_cyclonedds
+fi
+
+# インストールディレクトリにrmw_cyclonedds_cppがなければビルド
+if [ ! -d "install/rmw_cyclonedds_cpp" ]; then
+    echo "[INFO] building Cyclone DDS..."
+    source "$ROS_ROOT/setup.bash" || true
+    colcon build --symlink-install --packages-select cyclonedds rmw_cyclonedds_cpp
+fi
+
+# Cyclone DDSを含めた環境を再度読み込み
+source "$DDS_WS/install/setup.bash" || true
+ROS_ROOT="$DDS_WS/install"
 
 # =========================================================
 # install directory
@@ -279,6 +326,10 @@ echo "source ~/ros2_humble/install/setup.bash" >> ~/.bashrc
 
 grep -qxF "source $INSTALL_DIR/src/ros2_ws/install/setup.bash" ~/.bashrc || \
 echo "source $INSTALL_DIR/src/ros2_ws/install/setup.bash" >> ~/.bashrc
+
+# RMWをCyclone DDSに変更
+grep -qxF "export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp" ~/.bashrc || \
+echo "export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp" >> ~/.bashrc
 
 # =========================================================
 # install run script
