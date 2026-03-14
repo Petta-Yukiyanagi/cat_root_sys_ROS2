@@ -1,0 +1,115 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-00b47b9b31be66c8210a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "joy",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "game_controller::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-game_controller-fcf5f1c4ebb3f8a908a8.json",
+					"name" : "game_controller",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "game_controller_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-game_controller_node-2b2d547940a00b0cde4d.json",
+					"name" : "game_controller_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "joy::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-joy-657a77c5cc72bbd242f2.json",
+					"name" : "joy",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "joy_enumerate_devices::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-joy_enumerate_devices-3e2e61f0ff8d6eaa8fd7.json",
+					"name" : "joy_enumerate_devices",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "joy_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-joy_node-6cfb7c908afacdbc941b.json",
+					"name" : "joy_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "joy_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-joy_uninstall-8e6b5572efe575726af5.json",
+					"name" : "joy_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-b7b19f3f9df251d07046.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/opt/cat_robot/src/ros2_ws/build/joy",
+		"source" : "/opt/cat_robot/src/ros2_ws/src/joystick_drivers/joy"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

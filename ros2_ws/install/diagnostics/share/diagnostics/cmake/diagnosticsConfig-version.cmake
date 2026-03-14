@@ -1,0 +1,1 @@
+/opt/cat_robot/src/ros2_ws/build/diagnostics/ament_cmake_core/diagnosticsConfig-version.cmake

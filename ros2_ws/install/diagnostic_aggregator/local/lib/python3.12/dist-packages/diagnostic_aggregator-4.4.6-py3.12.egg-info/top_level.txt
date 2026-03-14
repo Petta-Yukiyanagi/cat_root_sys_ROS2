@@ -1,0 +1,1 @@
+/opt/cat_robot/src/ros2_ws/build/diagnostic_aggregator/ament_cmake_python/diagnostic_aggregator/diagnostic_aggregator.egg-info/top_level.txt

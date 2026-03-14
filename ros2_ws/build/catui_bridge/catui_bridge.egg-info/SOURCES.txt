@@ -1,0 +1,13 @@
+package.xml
+setup.cfg
+setup.py
+catui_bridge/__init__.py
+catui_bridge/ui_bridge_node.py
+catui_bridge.egg-info/PKG-INFO
+catui_bridge.egg-info/SOURCES.txt
+catui_bridge.egg-info/dependency_links.txt
+catui_bridge.egg-info/entry_points.txt
+catui_bridge.egg-info/requires.txt
+catui_bridge.egg-info/top_level.txt
+catui_bridge.egg-info/zip-safe
+resource/catui_bridge

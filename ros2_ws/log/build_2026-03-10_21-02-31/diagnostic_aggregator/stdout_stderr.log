@@ -1,0 +1,163 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.14 (/home/user/ros2_humble/install/ament_cmake/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found diagnostic_msgs: 4.9.1 (/home/user/ros2_humble/install/diagnostic_msgs/share/diagnostic_msgs/cmake)
+-- Found rosidl_generator_c: 3.1.8 (/home/user/ros2_humble/install/rosidl_generator_c/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.8 (/home/user/ros2_humble/install/rosidl_adapter/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.8 (/home/user/ros2_humble/install/rosidl_generator_cpp/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_introspection_c;rosidl_typesupport_fastrtps_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_introspection_cpp;rosidl_typesupport_fastrtps_cpp
+-- Found pluginlib: 5.1.3 (/home/user/ros2_humble/install/pluginlib/share/pluginlib/cmake)
+-- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2
+-- Found rclcpp: 16.0.18 (/home/user/ros2_humble/install/rclcpp/share/rclcpp/cmake)
+-- Found rmw_implementation_cmake: 6.1.2 (/home/user/ros2_humble/install/rmw_implementation_cmake/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.10 (/home/user/ros2_humble/install/rmw_fastrtps_cpp/share/rmw_fastrtps_cpp/cmake)
+-- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2
+-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  
+-- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2
+-- Found FastRTPS: /home/user/ros2_humble/install/fastrtps/include  
+-- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2
+-- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Found ament_lint_auto: 0.12.15 (/home/user/ros2_humble/install/ament_lint_auto/share/ament_lint_auto/cmake)
+-- Found python_cmake_module: 0.10.0 (/home/user/ros2_humble/install/python_cmake_module/share/python_cmake_module/cmake)
+[33mCMake Warning (dev) at /home/user/ros2_humble/install/python_cmake_module/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:52 (find_package):
+  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+  the cmake_policy command to set the policy and suppress this warning.
+
+Call Stack (most recent call first):
+  /home/user/ros2_humble/install/launch_testing_ament_cmake/share/launch_testing_ament_cmake/cmake/launch_testing_ament_cmake-extras.cmake:18 (find_package)
+  /home/user/ros2_humble/install/launch_testing_ament_cmake/share/launch_testing_ament_cmake/cmake/launch_testing_ament_cmakeConfig.cmake:41 (include)
+  /home/user/ros2_humble/install/ament_lint_auto/share/ament_lint_auto/cmake/ament_lint_auto_find_test_dependencies.cmake:36 (find_package)
+  CMakeLists.txt:79 (ament_lint_auto_find_test_dependencies)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.12.3", minimum required is "3.6") 
+[33mCMake Warning (dev) at /home/user/ros2_humble/install/python_cmake_module/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:140 (find_package):
+  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+  the cmake_policy command to set the policy and suppress this warning.
+
+Call Stack (most recent call first):
+  /home/user/ros2_humble/install/launch_testing_ament_cmake/share/launch_testing_ament_cmake/cmake/launch_testing_ament_cmake-extras.cmake:18 (find_package)
+  /home/user/ros2_humble/install/launch_testing_ament_cmake/share/launch_testing_ament_cmake/cmake/launch_testing_ament_cmakeConfig.cmake:41 (include)
+  /home/user/ros2_humble/install/ament_lint_auto/share/ament_lint_auto/cmake/ament_lint_auto_find_test_dependencies.cmake:36 (find_package)
+  CMakeLists.txt:79 (ament_lint_auto_find_test_dependencies)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+-- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.12.so (found suitable version "3.12.3", minimum required is "3.5") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.12
+-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.12.so
+-- Found PythonExtra: .so  
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/opt/cat_robot/src/ros2_ws/src/diagnostics/diagnostic_aggregator/include>
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (7.4s)
+-- Generating done (0.1s)
+-- Build files have been written to: /opt/cat_robot/src/ros2_ws/build/diagnostic_aggregator
+[  8%] [32mBuilding CXX object CMakeFiles/diagnostic_aggregator.dir/src/status_item.cpp.o[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/diagnostic_aggregator.dir/src/analyzer_group.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/diagnostic_aggregator.dir/src/aggregator.cpp.o[0m
+[ 33%] [32m[1mLinking CXX shared library libdiagnostic_aggregator.so[0m
+[ 33%] Built target diagnostic_aggregator
+[ 33%] Built target ament_cmake_python_symlink_diagnostic_aggregator
+[ 41%] [32mBuilding CXX object CMakeFiles/aggregator_node.dir/src/aggregator_node.cpp.o[0m
+[ 50%] [32m[1mLinking CXX executable aggregator_node[0m
+[ 50%] Built target aggregator_node
+running egg_info
+creating diagnostic_aggregator.egg-info
+writing diagnostic_aggregator.egg-info/PKG-INFO
+writing dependency_links to diagnostic_aggregator.egg-info/dependency_links.txt
+writing top-level names to diagnostic_aggregator.egg-info/top_level.txt
+writing manifest file 'diagnostic_aggregator.egg-info/SOURCES.txt'
+reading manifest file 'diagnostic_aggregator.egg-info/SOURCES.txt'
+writing manifest file 'diagnostic_aggregator.egg-info/SOURCES.txt'
+[ 50%] Built target ament_cmake_python_build_diagnostic_aggregator_egg
+[ 58%] [32mBuilding CXX object CMakeFiles/diagnostic_aggregator_analyzers.dir/src/generic_analyzer.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/diagnostic_aggregator_analyzers.dir/src/ignore_analyzer.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/diagnostic_aggregator_analyzers.dir/src/discard_analyzer.cpp.o[0m
+[ 83%] [32m[1mLinking CXX shared library libdiagnostic_aggregator_analyzers.so[0m
+[ 83%] Built target diagnostic_aggregator_analyzers
+[ 91%] [32mBuilding CXX object CMakeFiles/add_analyzer.dir/src/add_analyzer.cpp.o[0m
+[100%] [32m[1mLinking CXX executable add_analyzer[0m
+[100%] Built target add_analyzer
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/diagnostic_aggregator/lib/diagnostic_aggregator/aggregator_node
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/diagnostic_aggregator/lib/diagnostic_aggregator/add_analyzer
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/diagnostic_aggregator/include/diagnostic_aggregator/aggregator.hpp
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/diagnostic_aggregator/include/diagnostic_aggregator/analyzer.hpp
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/diagnostic_aggregator/include/diagnostic_aggregator/analyzer_group.hpp
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/diagnostic_aggregator/include/diagnostic_aggregator/discard_analyzer.hpp
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/diagnostic_aggregator/include/diagnostic_aggregator/generic_analyzer.hpp
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/diagnostic_aggregator/include/diagnostic_aggregator/generic_analyzer_base.hpp
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/diagnostic_aggregator/include/diagnostic_aggregator/ignore_analyzer.hpp
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/diagnostic_aggregator/include/diagnostic_aggregator/other_analyzer.hpp
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/diagnostic_aggregator/include/diagnostic_aggregator/status_item.hpp
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/diagnostic_aggregator/include/diagnostic_aggregator/visibility_control.hpp
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/diagnostic_aggregator/share/diagnostic_aggregator/environment/pythonpath.sh
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/diagnostic_aggregator/share/diagnostic_aggregator/environment/pythonpath.dsv
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/diagnostic_aggregator/local/lib/python3.12/dist-packages/diagnostic_aggregator-4.4.6-py3.12.egg-info/PKG-INFO
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/diagnostic_aggregator/local/lib/python3.12/dist-packages/diagnostic_aggregator-4.4.6-py3.12.egg-info/SOURCES.txt
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/diagnostic_aggregator/local/lib/python3.12/dist-packages/diagnostic_aggregator-4.4.6-py3.12.egg-info/dependency_links.txt
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/diagnostic_aggregator/local/lib/python3.12/dist-packages/diagnostic_aggregator-4.4.6-py3.12.egg-info/top_level.txt
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/diagnostic_aggregator/local/lib/python3.12/dist-packages/diagnostic_aggregator/__init__.py
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/diagnostic_aggregator/share/diagnostic_aggregator/example.launch.py
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/diagnostic_aggregator/lib/diagnostic_aggregator/example_pub.py
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/diagnostic_aggregator/share/diagnostic_aggregator/example_analyzers.yaml
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/diagnostic_aggregator/share/diagnostic_aggregator/example_add_analyzers.yaml
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/diagnostic_aggregator/share/diagnostic_aggregator//plugin_description.xml
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/diagnostic_aggregator/share/diagnostic_aggregator/environment/library_path.sh
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/diagnostic_aggregator/share/diagnostic_aggregator/environment/library_path.dsv
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/diagnostic_aggregator/share/ament_index/resource_index/package_run_dependencies/diagnostic_aggregator
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/diagnostic_aggregator/share/ament_index/resource_index/parent_prefix_path/diagnostic_aggregator
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/diagnostic_aggregator/share/diagnostic_aggregator/environment/ament_prefix_path.sh
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/diagnostic_aggregator/share/diagnostic_aggregator/environment/ament_prefix_path.dsv
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/diagnostic_aggregator/share/diagnostic_aggregator/environment/path.sh
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/diagnostic_aggregator/share/diagnostic_aggregator/environment/path.dsv
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/diagnostic_aggregator/share/diagnostic_aggregator/local_setup.bash
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/diagnostic_aggregator/share/diagnostic_aggregator/local_setup.sh
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/diagnostic_aggregator/share/diagnostic_aggregator/local_setup.zsh
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/diagnostic_aggregator/share/diagnostic_aggregator/local_setup.dsv
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/diagnostic_aggregator/share/diagnostic_aggregator/package.dsv
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/diagnostic_aggregator/share/ament_index/resource_index/packages/diagnostic_aggregator
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/diagnostic_aggregator/share/ament_index/resource_index/diagnostic_aggregator__pluginlib__plugin/diagnostic_aggregator
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/diagnostic_aggregator/share/diagnostic_aggregator/cmake/ament_cmake_export_targets-extras.cmake
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/diagnostic_aggregator/share/diagnostic_aggregator/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/diagnostic_aggregator/share/diagnostic_aggregator/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/diagnostic_aggregator/share/diagnostic_aggregator/cmake/diagnostic_aggregatorConfig.cmake
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/diagnostic_aggregator/share/diagnostic_aggregator/cmake/diagnostic_aggregatorConfig-version.cmake
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/diagnostic_aggregator/share/diagnostic_aggregator/package.xml
+-- Installing: /opt/cat_robot/src/ros2_ws/install/diagnostic_aggregator/lib/libdiagnostic_aggregator.so
+-- Set non-toolchain portion of runtime path of "/opt/cat_robot/src/ros2_ws/install/diagnostic_aggregator/lib/libdiagnostic_aggregator.so" to ""
+-- Installing: /opt/cat_robot/src/ros2_ws/install/diagnostic_aggregator/lib/libdiagnostic_aggregator_analyzers.so
+-- Set non-toolchain portion of runtime path of "/opt/cat_robot/src/ros2_ws/install/diagnostic_aggregator/lib/libdiagnostic_aggregator_analyzers.so" to ""
+Listing '/opt/cat_robot/src/ros2_ws/install/diagnostic_aggregator/local/lib/python3.12/dist-packages/diagnostic_aggregator'...
+Compiling '/opt/cat_robot/src/ros2_ws/install/diagnostic_aggregator/local/lib/python3.12/dist-packages/diagnostic_aggregator/__init__.py'...
+-- Installing: /opt/cat_robot/src/ros2_ws/install/diagnostic_aggregator/share/diagnostic_aggregator/cmake/diagnostic_aggregatorTargetsExport.cmake
+-- Installing: /opt/cat_robot/src/ros2_ws/install/diagnostic_aggregator/share/diagnostic_aggregator/cmake/diagnostic_aggregatorTargetsExport-noconfig.cmake

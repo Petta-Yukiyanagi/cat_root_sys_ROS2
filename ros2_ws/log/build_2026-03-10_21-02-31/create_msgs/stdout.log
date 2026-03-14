@@ -1,0 +1,358 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.14 (/home/user/ros2_humble/install/ament_cmake/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rosidl_default_generators: 1.2.1 (/home/user/ros2_humble/install/rosidl_default_generators/share/rosidl_default_generators/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_introspection_c;rosidl_typesupport_fastrtps_c
+-- Found rosidl_adapter: 3.1.8 (/home/user/ros2_humble/install/rosidl_adapter/share/rosidl_adapter/cmake)
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_introspection_cpp;rosidl_typesupport_fastrtps_cpp
+-- Found std_msgs: 4.9.1 (/home/user/ros2_humble/install/std_msgs/share/std_msgs/cmake)
+-- Found ament_cmake_ros: 0.10.0 (/home/user/ros2_humble/install/ament_cmake_ros/share/ament_cmake_ros/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_introspection_c;rosidl_typesupport_fastrtps_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_introspection_cpp;rosidl_typesupport_fastrtps_cpp
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.12.3", minimum required is "3.6") 
+-- Found python_cmake_module: 0.10.0 (/home/user/ros2_humble/install/python_cmake_module/share/python_cmake_module/cmake)
+-- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.12.so (found suitable version "3.12.3", minimum required is "3.5") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.12
+-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.12.so
+-- Found PythonExtra: .so  
+-- Using numpy include directory: /usr/lib/python3/dist-packages/numpy/core/include
+-- Configuring done (35.5s)
+-- Generating done (0.1s)
+-- Build files have been written to: /opt/cat_robot/src/ros2_ws/build/create_msgs
+[  1%] [34m[1mGenerating Rust code for ROS interfaces[0m
+[  1%] Built target create_msgs__rs
+[  1%] Built target ament_cmake_python_symlink_create_msgs
+[  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[  3%] [32mBuilding C object CMakeFiles/create_msgs__rosidl_generator_c.dir/rosidl_generator_c/create_msgs/msg/detail/bumper__functions.c.o[0m
+[  5%] [32mBuilding C object CMakeFiles/create_msgs__rosidl_generator_c.dir/rosidl_generator_c/create_msgs/msg/detail/charging_state__functions.c.o[0m
+[  6%] [32mBuilding C object CMakeFiles/create_msgs__rosidl_generator_c.dir/rosidl_generator_c/create_msgs/msg/detail/define_song__functions.c.o[0m
+[  7%] [32mBuilding C object CMakeFiles/create_msgs__rosidl_generator_c.dir/rosidl_generator_c/create_msgs/msg/detail/mode__functions.c.o[0m
+[  8%] [32mBuilding C object CMakeFiles/create_msgs__rosidl_generator_c.dir/rosidl_generator_c/create_msgs/msg/detail/play_song__functions.c.o[0m
+[ 10%] [32mBuilding C object CMakeFiles/create_msgs__rosidl_generator_c.dir/rosidl_generator_c/create_msgs/msg/detail/motor_setpoint__functions.c.o[0m
+[ 11%] [32mBuilding C object CMakeFiles/create_msgs__rosidl_generator_c.dir/rosidl_generator_c/create_msgs/msg/detail/cliff__functions.c.o[0m
+[ 12%] [32m[1mLinking C shared library libcreate_msgs__rosidl_generator_c.so[0m
+[ 12%] Built target create_msgs__rosidl_generator_c
+running egg_info
+creating create_msgs.egg-info
+writing create_msgs.egg-info/PKG-INFO
+writing dependency_links to create_msgs.egg-info/dependency_links.txt
+writing top-level names to create_msgs.egg-info/top_level.txt
+writing manifest file 'create_msgs.egg-info/SOURCES.txt'
+reading manifest file 'create_msgs.egg-info/SOURCES.txt'
+writing manifest file 'create_msgs.egg-info/SOURCES.txt'
+[ 12%] Built target ament_cmake_python_build_create_msgs_egg
+[ 13%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[ 15%] [32mBuilding C object CMakeFiles/create_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/create_msgs/msg/detail/bumper__type_support.c.o[0m
+[ 16%] [32mBuilding C object CMakeFiles/create_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/create_msgs/msg/detail/charging_state__type_support.c.o[0m
+[ 17%] [32mBuilding C object CMakeFiles/create_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/create_msgs/msg/detail/define_song__type_support.c.o[0m
+[ 18%] [32mBuilding C object CMakeFiles/create_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/create_msgs/msg/detail/mode__type_support.c.o[0m
+[ 20%] [32mBuilding C object CMakeFiles/create_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/create_msgs/msg/detail/play_song__type_support.c.o[0m
+[ 21%] [32mBuilding C object CMakeFiles/create_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/create_msgs/msg/detail/motor_setpoint__type_support.c.o[0m
+[ 22%] [32mBuilding C object CMakeFiles/create_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/create_msgs/msg/detail/cliff__type_support.c.o[0m
+[ 23%] [32m[1mLinking C shared library libcreate_msgs__rosidl_typesupport_introspection_c.so[0m
+[ 23%] Built target create_msgs__rosidl_typesupport_introspection_c
+[ 25%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[ 26%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/create_msgs/msg/detail/bumper__type_support_c.cpp.o[0m
+[ 27%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/create_msgs/msg/detail/charging_state__type_support_c.cpp.o[0m
+[ 28%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/create_msgs/msg/detail/define_song__type_support_c.cpp.o[0m
+[ 30%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/create_msgs/msg/detail/mode__type_support_c.cpp.o[0m
+[ 31%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/create_msgs/msg/detail/play_song__type_support_c.cpp.o[0m
+[ 32%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/create_msgs/msg/detail/motor_setpoint__type_support_c.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/create_msgs/msg/detail/cliff__type_support_c.cpp.o[0m
+[ 35%] [32m[1mLinking CXX shared library libcreate_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[ 35%] Built target create_msgs__rosidl_typesupport_fastrtps_c
+[ 36%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[ 37%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/create_msgs/msg/bumper__type_support.cpp.o[0m
+[ 38%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/create_msgs/msg/define_song__type_support.cpp.o[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/create_msgs/msg/mode__type_support.cpp.o[0m
+[ 41%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/create_msgs/msg/play_song__type_support.cpp.o[0m
+[ 42%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/create_msgs/msg/motor_setpoint__type_support.cpp.o[0m
+[ 43%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/create_msgs/msg/cliff__type_support.cpp.o[0m
+[ 45%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/create_msgs/msg/charging_state__type_support.cpp.o[0m
+[ 46%] [32m[1mLinking CXX shared library libcreate_msgs__rosidl_typesupport_c.so[0m
+[ 46%] Built target create_msgs__rosidl_typesupport_c
+[ 47%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[ 47%] Built target create_msgs__cpp
+[ 48%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/create_msgs/msg/detail/dds_fastrtps/bumper__type_support.cpp.o[0m
+[ 51%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/create_msgs/msg/detail/dds_fastrtps/charging_state__type_support.cpp.o[0m
+[ 52%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/create_msgs/msg/detail/dds_fastrtps/define_song__type_support.cpp.o[0m
+[ 53%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/create_msgs/msg/detail/dds_fastrtps/mode__type_support.cpp.o[0m
+[ 55%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/create_msgs/msg/detail/dds_fastrtps/play_song__type_support.cpp.o[0m
+[ 56%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/create_msgs/msg/detail/dds_fastrtps/motor_setpoint__type_support.cpp.o[0m
+[ 57%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/create_msgs/msg/detail/dds_fastrtps/cliff__type_support.cpp.o[0m
+[ 58%] [32m[1mLinking CXX shared library libcreate_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[ 58%] Built target create_msgs__rosidl_typesupport_fastrtps_cpp
+[ 60%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[ 61%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/create_msgs/msg/detail/bumper__type_support.cpp.o[0m
+[ 62%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/create_msgs/msg/detail/define_song__type_support.cpp.o[0m
+[ 63%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/create_msgs/msg/detail/mode__type_support.cpp.o[0m
+[ 65%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/create_msgs/msg/detail/play_song__type_support.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/create_msgs/msg/detail/motor_setpoint__type_support.cpp.o[0m
+[ 67%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/create_msgs/msg/detail/cliff__type_support.cpp.o[0m
+[ 68%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/create_msgs/msg/detail/charging_state__type_support.cpp.o[0m
+[ 70%] [32m[1mLinking CXX shared library libcreate_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[ 70%] Built target create_msgs__rosidl_typesupport_introspection_cpp
+[ 71%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[ 72%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/create_msgs/msg/bumper__type_support.cpp.o[0m
+[ 73%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/create_msgs/msg/mode__type_support.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/create_msgs/msg/play_song__type_support.cpp.o[0m
+[ 76%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/create_msgs/msg/motor_setpoint__type_support.cpp.o[0m
+[ 77%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/create_msgs/msg/cliff__type_support.cpp.o[0m
+[ 78%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/create_msgs/msg/define_song__type_support.cpp.o[0m
+[ 80%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/create_msgs/msg/charging_state__type_support.cpp.o[0m
+[ 81%] [32m[1mLinking CXX shared library libcreate_msgs__rosidl_typesupport_cpp.so[0m
+[ 81%] Built target create_msgs__rosidl_typesupport_cpp
+[ 81%] Built target create_msgs
+[ 82%] [34m[1mGenerating Python code for ROS interfaces[0m
+[ 82%] Built target create_msgs__py
+[ 83%] [32mBuilding C object CMakeFiles/create_msgs__rosidl_generator_py.dir/rosidl_generator_py/create_msgs/msg/_bumper_s.c.o[0m
+[ 85%] [32mBuilding C object CMakeFiles/create_msgs__rosidl_generator_py.dir/rosidl_generator_py/create_msgs/msg/_mode_s.c.o[0m
+[ 86%] [32mBuilding C object CMakeFiles/create_msgs__rosidl_generator_py.dir/rosidl_generator_py/create_msgs/msg/_play_song_s.c.o[0m
+[ 87%] [32mBuilding C object CMakeFiles/create_msgs__rosidl_generator_py.dir/rosidl_generator_py/create_msgs/msg/_motor_setpoint_s.c.o[0m
+[ 88%] [32mBuilding C object CMakeFiles/create_msgs__rosidl_generator_py.dir/rosidl_generator_py/create_msgs/msg/_cliff_s.c.o[0m
+[ 90%] [32mBuilding C object CMakeFiles/create_msgs__rosidl_generator_py.dir/rosidl_generator_py/create_msgs/msg/_define_song_s.c.o[0m
+[ 91%] [32mBuilding C object CMakeFiles/create_msgs__rosidl_generator_py.dir/rosidl_generator_py/create_msgs/msg/_charging_state_s.c.o[0m
+[ 92%] [32m[1mLinking C shared library rosidl_generator_py/create_msgs/libcreate_msgs__rosidl_generator_py.so[0m
+[ 92%] Built target create_msgs__rosidl_generator_py
+[ 93%] [32mBuilding C object CMakeFiles/create_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/create_msgs/_create_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[ 95%] [32m[1mLinking C shared library rosidl_generator_py/create_msgs/create_msgs_s__rosidl_typesupport_introspection_c.cpython-312-aarch64-linux-gnu.so[0m
+[ 95%] Built target create_msgs__rosidl_typesupport_introspection_c__pyext
+[ 96%] [32mBuilding C object CMakeFiles/create_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/create_msgs/_create_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[ 97%] [32m[1mLinking C shared library rosidl_generator_py/create_msgs/create_msgs_s__rosidl_typesupport_c.cpython-312-aarch64-linux-gnu.so[0m
+[ 97%] Built target create_msgs__rosidl_typesupport_c__pyext
+[ 98%] [32mBuilding C object CMakeFiles/create_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/create_msgs/_create_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[100%] [32m[1mLinking C shared library rosidl_generator_py/create_msgs/create_msgs_s__rosidl_typesupport_fastrtps_c.cpython-312-aarch64-linux-gnu.so[0m
+[100%] Built target create_msgs__rosidl_typesupport_fastrtps_c__pyext
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/share/ament_index/resource_index/rosidl_interfaces/create_msgs
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/bumper.h
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/charging_state.h
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/cliff.h
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/define_song.h
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/bumper__functions.h
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/bumper__struct.h
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/bumper__type_support.h
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/charging_state__functions.h
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/charging_state__struct.h
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/charging_state__type_support.h
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/cliff__functions.h
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/cliff__struct.h
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/cliff__type_support.h
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/define_song__functions.h
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/define_song__struct.h
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/define_song__type_support.h
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/mode__functions.h
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/mode__struct.h
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/mode__type_support.h
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/motor_setpoint__functions.h
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/motor_setpoint__struct.h
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/motor_setpoint__type_support.h
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/play_song__functions.h
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/play_song__struct.h
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/play_song__type_support.h
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/mode.h
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/motor_setpoint.h
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/play_song.h
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/rosidl_generator_c__visibility_control.h
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/share/create_msgs/environment/library_path.sh
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/share/create_msgs/environment/library_path.dsv
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/bumper__rosidl_typesupport_introspection_c.h
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/charging_state__rosidl_typesupport_introspection_c.h
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/cliff__rosidl_typesupport_introspection_c.h
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/define_song__rosidl_typesupport_introspection_c.h
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/mode__rosidl_typesupport_introspection_c.h
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/motor_setpoint__rosidl_typesupport_introspection_c.h
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/play_song__rosidl_typesupport_introspection_c.h
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/bumper__rosidl_typesupport_fastrtps_c.h
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/charging_state__rosidl_typesupport_fastrtps_c.h
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/cliff__rosidl_typesupport_fastrtps_c.h
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/define_song__rosidl_typesupport_fastrtps_c.h
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/mode__rosidl_typesupport_fastrtps_c.h
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/motor_setpoint__rosidl_typesupport_fastrtps_c.h
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/play_song__rosidl_typesupport_fastrtps_c.h
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/bumper.hpp
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/charging_state.hpp
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/cliff.hpp
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/define_song.hpp
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/bumper__builder.hpp
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/bumper__struct.hpp
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/bumper__traits.hpp
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/bumper__type_support.hpp
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/charging_state__builder.hpp
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/charging_state__struct.hpp
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/charging_state__traits.hpp
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/charging_state__type_support.hpp
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/cliff__builder.hpp
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/cliff__struct.hpp
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/cliff__traits.hpp
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/cliff__type_support.hpp
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/define_song__builder.hpp
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/define_song__struct.hpp
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/define_song__traits.hpp
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/define_song__type_support.hpp
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/mode__builder.hpp
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/mode__struct.hpp
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/mode__traits.hpp
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/mode__type_support.hpp
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/motor_setpoint__builder.hpp
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/motor_setpoint__struct.hpp
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/motor_setpoint__traits.hpp
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/motor_setpoint__type_support.hpp
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/play_song__builder.hpp
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/play_song__struct.hpp
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/play_song__traits.hpp
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/play_song__type_support.hpp
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/mode.hpp
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/motor_setpoint.hpp
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/play_song.hpp
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/bumper__rosidl_typesupport_introspection_cpp.hpp
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/charging_state__rosidl_typesupport_introspection_cpp.hpp
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/cliff__rosidl_typesupport_introspection_cpp.hpp
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/define_song__rosidl_typesupport_introspection_cpp.hpp
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/mode__rosidl_typesupport_introspection_cpp.hpp
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/motor_setpoint__rosidl_typesupport_introspection_cpp.hpp
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/play_song__rosidl_typesupport_introspection_cpp.hpp
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/bumper__rosidl_typesupport_fastrtps_cpp.hpp
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/charging_state__rosidl_typesupport_fastrtps_cpp.hpp
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/cliff__rosidl_typesupport_fastrtps_cpp.hpp
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/define_song__rosidl_typesupport_fastrtps_cpp.hpp
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/mode__rosidl_typesupport_fastrtps_cpp.hpp
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/motor_setpoint__rosidl_typesupport_fastrtps_cpp.hpp
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/play_song__rosidl_typesupport_fastrtps_cpp.hpp
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/include/create_msgs/create_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/share/create_msgs/environment/pythonpath.sh
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/share/create_msgs/environment/pythonpath.dsv
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/local/lib/python3.12/dist-packages/create_msgs-3.1.0-py3.12.egg-info/PKG-INFO
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/local/lib/python3.12/dist-packages/create_msgs-3.1.0-py3.12.egg-info/SOURCES.txt
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/local/lib/python3.12/dist-packages/create_msgs-3.1.0-py3.12.egg-info/dependency_links.txt
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/local/lib/python3.12/dist-packages/create_msgs-3.1.0-py3.12.egg-info/top_level.txt
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/local/lib/python3.12/dist-packages/create_msgs/__init__.py
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/local/lib/python3.12/dist-packages/create_msgs/_create_msgs_s.ep.rosidl_typesupport_c.c
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/local/lib/python3.12/dist-packages/create_msgs/_create_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/local/lib/python3.12/dist-packages/create_msgs/_create_msgs_s.ep.rosidl_typesupport_introspection_c.c
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/local/lib/python3.12/dist-packages/create_msgs/create_msgs_s__rosidl_typesupport_c.cpython-312-aarch64-linux-gnu.so
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/local/lib/python3.12/dist-packages/create_msgs/create_msgs_s__rosidl_typesupport_fastrtps_c.cpython-312-aarch64-linux-gnu.so
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/local/lib/python3.12/dist-packages/create_msgs/create_msgs_s__rosidl_typesupport_introspection_c.cpython-312-aarch64-linux-gnu.so
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/local/lib/python3.12/dist-packages/create_msgs/libcreate_msgs__rosidl_generator_py.so
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/local/lib/python3.12/dist-packages/create_msgs/msg/__init__.py
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/local/lib/python3.12/dist-packages/create_msgs/msg/_bumper.py
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/local/lib/python3.12/dist-packages/create_msgs/msg/_bumper_s.c
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/local/lib/python3.12/dist-packages/create_msgs/msg/_charging_state.py
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/local/lib/python3.12/dist-packages/create_msgs/msg/_charging_state_s.c
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/local/lib/python3.12/dist-packages/create_msgs/msg/_cliff.py
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/local/lib/python3.12/dist-packages/create_msgs/msg/_cliff_s.c
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/local/lib/python3.12/dist-packages/create_msgs/msg/_define_song.py
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/local/lib/python3.12/dist-packages/create_msgs/msg/_define_song_s.c
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/local/lib/python3.12/dist-packages/create_msgs/msg/_mode.py
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/local/lib/python3.12/dist-packages/create_msgs/msg/_mode_s.c
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/local/lib/python3.12/dist-packages/create_msgs/msg/_motor_setpoint.py
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/local/lib/python3.12/dist-packages/create_msgs/msg/_motor_setpoint_s.c
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/local/lib/python3.12/dist-packages/create_msgs/msg/_play_song.py
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/local/lib/python3.12/dist-packages/create_msgs/msg/_play_song_s.c
+-- Up-to-date symlink: /opt/cat_robot/src/ros2_ws/install/create_msgs/local/lib/python3.12/dist-packages/create_msgs/create_msgs_s__rosidl_typesupport_introspection_c.cpython-312-aarch64-linux-gnu.so
+-- Up-to-date symlink: /opt/cat_robot/src/ros2_ws/install/create_msgs/local/lib/python3.12/dist-packages/create_msgs/create_msgs_s__rosidl_typesupport_fastrtps_c.cpython-312-aarch64-linux-gnu.so
+-- Up-to-date symlink: /opt/cat_robot/src/ros2_ws/install/create_msgs/local/lib/python3.12/dist-packages/create_msgs/create_msgs_s__rosidl_typesupport_c.cpython-312-aarch64-linux-gnu.so
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/share/ament_index/resource_index/rust_packages/create_msgs
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/share/create_msgs/rust/Cargo.toml
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/share/create_msgs/rust/build.rs
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/share/create_msgs/rust/src/lib.rs
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/share/create_msgs/rust/src/msg.rs
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/share/create_msgs/rust/src/msg/rmw.rs
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/share/create_msgs/msg/Bumper.idl
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/share/create_msgs/msg/ChargingState.idl
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/share/create_msgs/msg/DefineSong.idl
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/share/create_msgs/msg/Mode.idl
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/share/create_msgs/msg/PlaySong.idl
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/share/create_msgs/msg/MotorSetpoint.idl
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/share/create_msgs/msg/Cliff.idl
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/share/create_msgs/msg/Bumper.msg
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/share/create_msgs/msg/ChargingState.msg
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/share/create_msgs/msg/DefineSong.msg
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/share/create_msgs/msg/Mode.msg
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/share/create_msgs/msg/PlaySong.msg
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/share/create_msgs/msg/MotorSetpoint.msg
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/share/create_msgs/msg/Cliff.msg
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/share/ament_index/resource_index/package_run_dependencies/create_msgs
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/share/ament_index/resource_index/parent_prefix_path/create_msgs
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/share/create_msgs/environment/ament_prefix_path.sh
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/share/create_msgs/environment/ament_prefix_path.dsv
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/share/create_msgs/environment/path.sh
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/share/create_msgs/environment/path.dsv
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/share/create_msgs/local_setup.bash
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/share/create_msgs/local_setup.sh
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/share/create_msgs/local_setup.zsh
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/share/create_msgs/local_setup.dsv
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/share/create_msgs/package.dsv
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/share/ament_index/resource_index/packages/create_msgs
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/share/create_msgs/cmake/rosidl_cmake-extras.cmake
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/share/create_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/share/create_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/share/create_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/share/create_msgs/cmake/ament_cmake_export_targets-extras.cmake
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/share/create_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/share/create_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/share/create_msgs/cmake/create_msgsConfig.cmake
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/share/create_msgs/cmake/create_msgsConfig-version.cmake
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_msgs/share/create_msgs/package.xml
+-- Installing: /opt/cat_robot/src/ros2_ws/install/create_msgs/lib/libcreate_msgs__rosidl_generator_c.so
+-- Set non-toolchain portion of runtime path of "/opt/cat_robot/src/ros2_ws/install/create_msgs/lib/libcreate_msgs__rosidl_generator_c.so" to ""
+-- Installing: /opt/cat_robot/src/ros2_ws/install/create_msgs/lib/libcreate_msgs__rosidl_typesupport_introspection_c.so
+-- Set non-toolchain portion of runtime path of "/opt/cat_robot/src/ros2_ws/install/create_msgs/lib/libcreate_msgs__rosidl_typesupport_introspection_c.so" to ""
+-- Installing: /opt/cat_robot/src/ros2_ws/install/create_msgs/lib/libcreate_msgs__rosidl_typesupport_fastrtps_c.so
+-- Set non-toolchain portion of runtime path of "/opt/cat_robot/src/ros2_ws/install/create_msgs/lib/libcreate_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+-- Installing: /opt/cat_robot/src/ros2_ws/install/create_msgs/lib/libcreate_msgs__rosidl_typesupport_c.so
+-- Set non-toolchain portion of runtime path of "/opt/cat_robot/src/ros2_ws/install/create_msgs/lib/libcreate_msgs__rosidl_typesupport_c.so" to ""
+-- Installing: /opt/cat_robot/src/ros2_ws/install/create_msgs/lib/libcreate_msgs__rosidl_typesupport_introspection_cpp.so
+-- Set non-toolchain portion of runtime path of "/opt/cat_robot/src/ros2_ws/install/create_msgs/lib/libcreate_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+-- Installing: /opt/cat_robot/src/ros2_ws/install/create_msgs/lib/libcreate_msgs__rosidl_typesupport_fastrtps_cpp.so
+-- Set non-toolchain portion of runtime path of "/opt/cat_robot/src/ros2_ws/install/create_msgs/lib/libcreate_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+-- Installing: /opt/cat_robot/src/ros2_ws/install/create_msgs/lib/libcreate_msgs__rosidl_typesupport_cpp.so
+-- Set non-toolchain portion of runtime path of "/opt/cat_robot/src/ros2_ws/install/create_msgs/lib/libcreate_msgs__rosidl_typesupport_cpp.so" to ""
+Listing '/opt/cat_robot/src/ros2_ws/install/create_msgs/local/lib/python3.12/dist-packages/create_msgs'...
+Compiling '/opt/cat_robot/src/ros2_ws/install/create_msgs/local/lib/python3.12/dist-packages/create_msgs/__init__.py'...
+Listing '/opt/cat_robot/src/ros2_ws/install/create_msgs/local/lib/python3.12/dist-packages/create_msgs/msg'...
+Compiling '/opt/cat_robot/src/ros2_ws/install/create_msgs/local/lib/python3.12/dist-packages/create_msgs/msg/__init__.py'...
+Compiling '/opt/cat_robot/src/ros2_ws/install/create_msgs/local/lib/python3.12/dist-packages/create_msgs/msg/_bumper.py'...
+Compiling '/opt/cat_robot/src/ros2_ws/install/create_msgs/local/lib/python3.12/dist-packages/create_msgs/msg/_charging_state.py'...
+Compiling '/opt/cat_robot/src/ros2_ws/install/create_msgs/local/lib/python3.12/dist-packages/create_msgs/msg/_cliff.py'...
+Compiling '/opt/cat_robot/src/ros2_ws/install/create_msgs/local/lib/python3.12/dist-packages/create_msgs/msg/_define_song.py'...
+Compiling '/opt/cat_robot/src/ros2_ws/install/create_msgs/local/lib/python3.12/dist-packages/create_msgs/msg/_mode.py'...
+Compiling '/opt/cat_robot/src/ros2_ws/install/create_msgs/local/lib/python3.12/dist-packages/create_msgs/msg/_motor_setpoint.py'...
+Compiling '/opt/cat_robot/src/ros2_ws/install/create_msgs/local/lib/python3.12/dist-packages/create_msgs/msg/_play_song.py'...
+-- Installing: /opt/cat_robot/src/ros2_ws/install/create_msgs/lib/libcreate_msgs__rosidl_generator_py.so
+-- Set non-toolchain portion of runtime path of "/opt/cat_robot/src/ros2_ws/install/create_msgs/lib/libcreate_msgs__rosidl_generator_py.so" to ""
+-- Installing: /opt/cat_robot/src/ros2_ws/install/create_msgs/share/create_msgs/cmake/export_create_msgs__rosidl_generator_cExport.cmake
+-- Installing: /opt/cat_robot/src/ros2_ws/install/create_msgs/share/create_msgs/cmake/export_create_msgs__rosidl_generator_cExport-noconfig.cmake
+-- Installing: /opt/cat_robot/src/ros2_ws/install/create_msgs/share/create_msgs/cmake/create_msgs__rosidl_typesupport_introspection_cExport.cmake
+-- Installing: /opt/cat_robot/src/ros2_ws/install/create_msgs/share/create_msgs/cmake/create_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+-- Installing: /opt/cat_robot/src/ros2_ws/install/create_msgs/share/create_msgs/cmake/export_create_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+-- Installing: /opt/cat_robot/src/ros2_ws/install/create_msgs/share/create_msgs/cmake/export_create_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+-- Installing: /opt/cat_robot/src/ros2_ws/install/create_msgs/share/create_msgs/cmake/create_msgs__rosidl_typesupport_cExport.cmake
+-- Installing: /opt/cat_robot/src/ros2_ws/install/create_msgs/share/create_msgs/cmake/create_msgs__rosidl_typesupport_cExport-noconfig.cmake
+-- Installing: /opt/cat_robot/src/ros2_ws/install/create_msgs/share/create_msgs/cmake/export_create_msgs__rosidl_generator_cppExport.cmake
+-- Installing: /opt/cat_robot/src/ros2_ws/install/create_msgs/share/create_msgs/cmake/create_msgs__rosidl_typesupport_introspection_cppExport.cmake
+-- Installing: /opt/cat_robot/src/ros2_ws/install/create_msgs/share/create_msgs/cmake/create_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+-- Installing: /opt/cat_robot/src/ros2_ws/install/create_msgs/share/create_msgs/cmake/export_create_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+-- Installing: /opt/cat_robot/src/ros2_ws/install/create_msgs/share/create_msgs/cmake/export_create_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+-- Installing: /opt/cat_robot/src/ros2_ws/install/create_msgs/share/create_msgs/cmake/create_msgs__rosidl_typesupport_cppExport.cmake
+-- Installing: /opt/cat_robot/src/ros2_ws/install/create_msgs/share/create_msgs/cmake/create_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+-- Installing: /opt/cat_robot/src/ros2_ws/install/create_msgs/share/create_msgs/cmake/export_create_msgs__rosidl_generator_pyExport.cmake
+-- Installing: /opt/cat_robot/src/ros2_ws/install/create_msgs/share/create_msgs/cmake/export_create_msgs__rosidl_generator_pyExport-noconfig.cmake

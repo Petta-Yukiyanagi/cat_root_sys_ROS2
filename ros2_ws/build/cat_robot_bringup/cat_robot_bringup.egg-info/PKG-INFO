@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: cat-robot-bringup
+Version: 0.0.0
+Summary: Cat Robot bringup package
+Maintainer: root
+Maintainer-email: tomoharusak@gmail.com
+License: Apache-2.0

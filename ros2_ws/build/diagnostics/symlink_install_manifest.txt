@@ -1,0 +1,15 @@
+/opt/cat_robot/src/ros2_ws/install/diagnostics/share/ament_index/resource_index/package_run_dependencies/diagnostics
+/opt/cat_robot/src/ros2_ws/install/diagnostics/share/ament_index/resource_index/parent_prefix_path/diagnostics
+/opt/cat_robot/src/ros2_ws/install/diagnostics/share/diagnostics/environment/ament_prefix_path.sh
+/opt/cat_robot/src/ros2_ws/install/diagnostics/share/diagnostics/environment/ament_prefix_path.dsv
+/opt/cat_robot/src/ros2_ws/install/diagnostics/share/diagnostics/environment/path.sh
+/opt/cat_robot/src/ros2_ws/install/diagnostics/share/diagnostics/environment/path.dsv
+/opt/cat_robot/src/ros2_ws/install/diagnostics/share/diagnostics/local_setup.bash
+/opt/cat_robot/src/ros2_ws/install/diagnostics/share/diagnostics/local_setup.sh
+/opt/cat_robot/src/ros2_ws/install/diagnostics/share/diagnostics/local_setup.zsh
+/opt/cat_robot/src/ros2_ws/install/diagnostics/share/diagnostics/local_setup.dsv
+/opt/cat_robot/src/ros2_ws/install/diagnostics/share/diagnostics/package.dsv
+/opt/cat_robot/src/ros2_ws/install/diagnostics/share/ament_index/resource_index/packages/diagnostics
+/opt/cat_robot/src/ros2_ws/install/diagnostics/share/diagnostics/cmake/diagnosticsConfig.cmake
+/opt/cat_robot/src/ros2_ws/install/diagnostics/share/diagnostics/cmake/diagnosticsConfig-version.cmake
+/opt/cat_robot/src/ros2_ws/install/diagnostics/share/diagnostics/package.xml

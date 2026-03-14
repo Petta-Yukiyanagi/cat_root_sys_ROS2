@@ -1,0 +1,1 @@
+/opt/cat_robot/src/ros2_ws/build/create_description/ament_cmake_core/create_descriptionConfig-version.cmake

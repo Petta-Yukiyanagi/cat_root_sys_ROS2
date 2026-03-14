@@ -1,0 +1,4 @@
+/opt/cat_robot/src/ros2_ws/install/diagnostic_aggregator/lib/libdiagnostic_aggregator.so
+/opt/cat_robot/src/ros2_ws/install/diagnostic_aggregator/lib/libdiagnostic_aggregator_analyzers.so
+/opt/cat_robot/src/ros2_ws/install/diagnostic_aggregator/share/diagnostic_aggregator/cmake/diagnostic_aggregatorTargetsExport.cmake
+/opt/cat_robot/src/ros2_ws/install/diagnostic_aggregator/share/diagnostic_aggregator/cmake/diagnostic_aggregatorTargetsExport-noconfig.cmake

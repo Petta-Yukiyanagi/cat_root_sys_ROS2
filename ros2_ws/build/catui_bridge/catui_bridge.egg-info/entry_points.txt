@@ -1,0 +1,2 @@
+[console_scripts]
+catui_bridge = catui_bridge.ui_bridge_node:main

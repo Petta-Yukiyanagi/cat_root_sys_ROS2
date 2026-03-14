@@ -1,0 +1,23 @@
+{
+  "package_name": "catui_msgs",
+  "output_dir": "/opt/cat_robot/src/ros2_ws/build/catui_msgs/rosidl_typesupport_c/catui_msgs",
+  "template_dir": "/home/user/ros2_humble/install/rosidl_typesupport_c/share/rosidl_typesupport_c/resource",
+  "idl_tuples": [
+    "/opt/cat_robot/src/ros2_ws/build/catui_msgs/rosidl_adapter/catui_msgs:msg/CatUICommand.idl"
+  ],
+  "ros_interface_dependencies": [
+    "builtin_interfaces:/home/user/ros2_humble/install/builtin_interfaces/share/builtin_interfaces/msg/Duration.idl",
+    "builtin_interfaces:/home/user/ros2_humble/install/builtin_interfaces/share/builtin_interfaces/msg/Time.idl"
+  ],
+  "target_dependencies": [
+    "/home/user/ros2_humble/install/rosidl_typesupport_c/lib/rosidl_typesupport_c/rosidl_typesupport_c",
+    "/home/user/ros2_humble/install/rosidl_typesupport_c/local/lib/python3.12/dist-packages/rosidl_typesupport_c/__init__.py",
+    "/home/user/ros2_humble/install/rosidl_typesupport_c/share/rosidl_typesupport_c/resource/action__type_support.c.em",
+    "/home/user/ros2_humble/install/rosidl_typesupport_c/share/rosidl_typesupport_c/resource/idl__type_support.cpp.em",
+    "/home/user/ros2_humble/install/rosidl_typesupport_c/share/rosidl_typesupport_c/resource/msg__type_support.cpp.em",
+    "/home/user/ros2_humble/install/rosidl_typesupport_c/share/rosidl_typesupport_c/resource/srv__type_support.cpp.em",
+    "/opt/cat_robot/src/ros2_ws/build/catui_msgs/rosidl_adapter/catui_msgs/msg/CatUICommand.idl",
+    "/home/user/ros2_humble/install/builtin_interfaces/share/builtin_interfaces/msg/Duration.idl",
+    "/home/user/ros2_humble/install/builtin_interfaces/share/builtin_interfaces/msg/Time.idl"
+  ]
+}

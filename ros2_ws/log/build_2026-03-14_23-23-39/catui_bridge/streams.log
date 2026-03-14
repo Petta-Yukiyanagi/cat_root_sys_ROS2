@@ -1,0 +1,17 @@
+[3.024s] Invoking command in '/opt/cat_robot/src/ros2_ws/build/catui_bridge': AMENT_PREFIX_PATH=/opt/cat_robot/src/ros2_ws/install/catui_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/cat_robot/src/ros2_ws/install/catui_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/opt/cat_robot/src/ros2_ws/install/catui_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/opt/cat_robot/src/ros2_ws/build/catui_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/opt/cat_robot/src/ros2_ws/install/catui_bridge/lib/python3.12/site-packages:/opt/cat_robot/src/ros2_ws/install/catui_msgs/local/lib/python3.12/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /opt/cat_robot/src/ros2_ws/build/catui_bridge/build --no-deps symlink_data
+[4.114s] running develop
+[4.539s] running egg_info
+[4.579s] writing catui_bridge.egg-info/PKG-INFO
+[4.580s] writing dependency_links to catui_bridge.egg-info/dependency_links.txt
+[4.587s] writing entry points to catui_bridge.egg-info/entry_points.txt
+[4.588s] writing requirements to catui_bridge.egg-info/requires.txt
+[4.589s] writing top-level names to catui_bridge.egg-info/top_level.txt
+[4.673s] reading manifest file 'catui_bridge.egg-info/SOURCES.txt'
+[4.709s] writing manifest file 'catui_bridge.egg-info/SOURCES.txt'
+[4.759s] running build_ext
+[4.760s] Creating /opt/cat_robot/src/ros2_ws/install/catui_bridge/lib/python3.12/site-packages/catui-bridge.egg-link (link to .)
+[4.760s] Installing catui_bridge script to /opt/cat_robot/src/ros2_ws/install/catui_bridge/lib/catui_bridge
+[4.761s] 
+[4.761s] Installed /opt/cat_robot/src/ros2_ws/build/catui_bridge
+[4.761s] running symlink_data
+[4.953s] Invoked command in '/opt/cat_robot/src/ros2_ws/build/catui_bridge' returned '0': AMENT_PREFIX_PATH=/opt/cat_robot/src/ros2_ws/install/catui_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/cat_robot/src/ros2_ws/install/catui_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/opt/cat_robot/src/ros2_ws/install/catui_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/opt/cat_robot/src/ros2_ws/build/catui_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/opt/cat_robot/src/ros2_ws/install/catui_bridge/lib/python3.12/site-packages:/opt/cat_robot/src/ros2_ws/install/catui_msgs/local/lib/python3.12/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /opt/cat_robot/src/ros2_ws/build/catui_bridge/build --no-deps symlink_data

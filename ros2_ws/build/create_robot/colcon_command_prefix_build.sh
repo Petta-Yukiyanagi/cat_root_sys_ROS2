@@ -1,0 +1,10 @@
+# generated from colcon_core/shell/template/command_prefix.sh.em
+. "/opt/cat_robot/src/ros2_ws/install/create_msgs/share/create_msgs/package.sh"
+. "/opt/cat_robot/src/ros2_ws/install/diagnostic_updater/share/diagnostic_updater/package.sh"
+. "/opt/cat_robot/src/ros2_ws/install/libcreate/share/libcreate/package.sh"
+. "/opt/cat_robot/src/ros2_ws/install/sdl2_vendor/share/sdl2_vendor/package.sh"
+. "/opt/cat_robot/src/ros2_ws/install/xacro/share/xacro/package.sh"
+. "/opt/cat_robot/src/ros2_ws/install/create_description/share/create_description/package.sh"
+. "/opt/cat_robot/src/ros2_ws/install/create_driver/share/create_driver/package.sh"
+. "/opt/cat_robot/src/ros2_ws/install/joy/share/joy/package.sh"
+. "/opt/cat_robot/src/ros2_ws/install/create_bringup/share/create_bringup/package.sh"

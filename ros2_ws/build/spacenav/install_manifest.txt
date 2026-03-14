@@ -1,0 +1,3 @@
+/opt/cat_robot/src/ros2_ws/install/spacenav/lib/libspacenav.so
+/opt/cat_robot/src/ros2_ws/install/spacenav/share/spacenav/cmake/export_spacenavExport.cmake
+/opt/cat_robot/src/ros2_ws/install/spacenav/share/spacenav/cmake/export_spacenavExport-noconfig.cmake

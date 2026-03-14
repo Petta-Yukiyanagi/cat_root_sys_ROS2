@@ -1,0 +1,9 @@
+/opt/cat_robot/src/ros2_ws/build/sdl2_vendor/CMakeFiles/uninstall.dir
+/opt/cat_robot/src/ros2_ws/build/sdl2_vendor/CMakeFiles/sdl2_vendor_uninstall.dir
+/opt/cat_robot/src/ros2_ws/build/sdl2_vendor/CMakeFiles/test.dir
+/opt/cat_robot/src/ros2_ws/build/sdl2_vendor/CMakeFiles/edit_cache.dir
+/opt/cat_robot/src/ros2_ws/build/sdl2_vendor/CMakeFiles/rebuild_cache.dir
+/opt/cat_robot/src/ros2_ws/build/sdl2_vendor/CMakeFiles/list_install_components.dir
+/opt/cat_robot/src/ros2_ws/build/sdl2_vendor/CMakeFiles/install.dir
+/opt/cat_robot/src/ros2_ws/build/sdl2_vendor/CMakeFiles/install/local.dir
+/opt/cat_robot/src/ros2_ws/build/sdl2_vendor/CMakeFiles/install/strip.dir

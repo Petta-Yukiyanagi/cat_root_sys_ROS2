@@ -1,0 +1,15 @@
+/opt/cat_robot/src/ros2_ws/install/create_robot/share/ament_index/resource_index/package_run_dependencies/create_robot
+/opt/cat_robot/src/ros2_ws/install/create_robot/share/ament_index/resource_index/parent_prefix_path/create_robot
+/opt/cat_robot/src/ros2_ws/install/create_robot/share/create_robot/environment/ament_prefix_path.sh
+/opt/cat_robot/src/ros2_ws/install/create_robot/share/create_robot/environment/ament_prefix_path.dsv
+/opt/cat_robot/src/ros2_ws/install/create_robot/share/create_robot/environment/path.sh
+/opt/cat_robot/src/ros2_ws/install/create_robot/share/create_robot/environment/path.dsv
+/opt/cat_robot/src/ros2_ws/install/create_robot/share/create_robot/local_setup.bash
+/opt/cat_robot/src/ros2_ws/install/create_robot/share/create_robot/local_setup.sh
+/opt/cat_robot/src/ros2_ws/install/create_robot/share/create_robot/local_setup.zsh
+/opt/cat_robot/src/ros2_ws/install/create_robot/share/create_robot/local_setup.dsv
+/opt/cat_robot/src/ros2_ws/install/create_robot/share/create_robot/package.dsv
+/opt/cat_robot/src/ros2_ws/install/create_robot/share/ament_index/resource_index/packages/create_robot
+/opt/cat_robot/src/ros2_ws/install/create_robot/share/create_robot/cmake/create_robotConfig.cmake
+/opt/cat_robot/src/ros2_ws/install/create_robot/share/create_robot/cmake/create_robotConfig-version.cmake
+/opt/cat_robot/src/ros2_ws/install/create_robot/share/create_robot/package.xml

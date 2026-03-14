@@ -1,0 +1,1 @@
+/opt/cat_robot/src/ros2_ws/build/create_msgs/rosidl_generator_py/create_msgs/msg/_cliff_s.c

@@ -1,0 +1,43 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.14 (/home/user/ros2_humble/install/ament_cmake/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Configuring done (4.3s)
+-- Generating done (0.0s)
+-- Build files have been written to: /opt/cat_robot/src/ros2_ws/build/create_bringup
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_bringup/share/create_bringup/config/default.yaml
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_bringup/share/create_bringup/config/dualshock4.yaml
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_bringup/share/create_bringup/config/log710.yaml
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_bringup/share/create_bringup/config/xbox360.yaml
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_bringup/share/create_bringup/launch/create_1.launch
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_bringup/share/create_bringup/launch/create_2.launch
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_bringup/share/create_bringup/launch/joy_teleop.launch
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_bringup/share/create_bringup/launch/roomba_400.launch
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_bringup/share/ament_index/resource_index/package_run_dependencies/create_bringup
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_bringup/share/ament_index/resource_index/parent_prefix_path/create_bringup
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_bringup/share/create_bringup/environment/ament_prefix_path.sh
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_bringup/share/create_bringup/environment/ament_prefix_path.dsv
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_bringup/share/create_bringup/environment/path.sh
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_bringup/share/create_bringup/environment/path.dsv
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_bringup/share/create_bringup/local_setup.bash
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_bringup/share/create_bringup/local_setup.sh
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_bringup/share/create_bringup/local_setup.zsh
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_bringup/share/create_bringup/local_setup.dsv
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_bringup/share/create_bringup/package.dsv
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_bringup/share/ament_index/resource_index/packages/create_bringup
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_bringup/share/create_bringup/cmake/create_bringupConfig.cmake
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_bringup/share/create_bringup/cmake/create_bringupConfig-version.cmake
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/create_bringup/share/create_bringup/package.xml

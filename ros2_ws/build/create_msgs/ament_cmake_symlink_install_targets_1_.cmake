@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/opt/cat_robot/src/ros2_ws/build/create_msgs/rosidl_generator_py/create_msgs/create_msgs_s__rosidl_typesupport_fastrtps_c.cpython-312-aarch64-linux-gnu.so" "TARGETS" "create_msgs__rosidl_typesupport_fastrtps_c__pyext" "DESTINATION" "local/lib/python3.12/dist-packages/create_msgs")

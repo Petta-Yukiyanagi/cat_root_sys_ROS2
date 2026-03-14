@@ -1,0 +1,1 @@
+/opt/cat_robot/src/ros2_ws/build/wiimote_msgs/ament_cmake_core/wiimote_msgsConfig-version.cmake

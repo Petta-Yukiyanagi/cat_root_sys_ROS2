@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/opt/cat_robot/src/ros2_ws/build/catui_msgs/rosidl_generator_py/catui_msgs/catui_msgs_s__rosidl_typesupport_introspection_c.cpython-312-aarch64-linux-gnu.so" "TARGETS" "catui_msgs__rosidl_typesupport_introspection_c__pyext" "DESTINATION" "local/lib/python3.12/dist-packages/catui_msgs")

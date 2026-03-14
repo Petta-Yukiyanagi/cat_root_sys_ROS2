@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "create_msgs__py",
+		"source" : "/opt/cat_robot/src/ros2_ws/build/create_msgs/create_msgs__py"
+	}
+}

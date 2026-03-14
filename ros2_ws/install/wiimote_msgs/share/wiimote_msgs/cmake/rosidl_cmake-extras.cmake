@@ -1,0 +1,1 @@
+/opt/cat_robot/src/ros2_ws/build/wiimote_msgs/rosidl_cmake/rosidl_cmake-extras.cmake

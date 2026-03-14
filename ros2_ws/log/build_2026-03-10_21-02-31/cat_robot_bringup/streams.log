@@ -1,0 +1,30 @@
+[7.050s] Invoking command in '/opt/cat_robot/src/ros2_ws/build/cat_robot_bringup': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/opt/cat_robot/src/ros2_ws/build/cat_robot_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/opt/cat_robot/src/ros2_ws/install/cat_robot_bringup/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /opt/cat_robot/src/ros2_ws/build/cat_robot_bringup/build --no-deps symlink_data
+[9.234s] running develop
+[11.497s] running egg_info
+[11.498s] creating cat_robot_bringup.egg-info
+[11.569s] writing cat_robot_bringup.egg-info/PKG-INFO
+[11.571s] writing dependency_links to cat_robot_bringup.egg-info/dependency_links.txt
+[11.572s] writing requirements to cat_robot_bringup.egg-info/requires.txt
+[11.572s] writing top-level names to cat_robot_bringup.egg-info/top_level.txt
+[11.574s] writing manifest file 'cat_robot_bringup.egg-info/SOURCES.txt'
+[11.760s] reading manifest file 'cat_robot_bringup.egg-info/SOURCES.txt'
+[11.761s] writing manifest file 'cat_robot_bringup.egg-info/SOURCES.txt'
+[11.831s] running build_ext
+[11.831s] Creating /opt/cat_robot/src/ros2_ws/install/cat_robot_bringup/lib/python3.12/site-packages/cat-robot-bringup.egg-link (link to .)
+[11.832s] 
+[11.832s] Installed /opt/cat_robot/src/ros2_ws/build/cat_robot_bringup
+[11.832s] running symlink_data
+[11.832s] creating /opt/cat_robot/src/ros2_ws/install/cat_robot_bringup/share/ament_index
+[11.832s] creating /opt/cat_robot/src/ros2_ws/install/cat_robot_bringup/share/ament_index/resource_index
+[11.833s] creating /opt/cat_robot/src/ros2_ws/install/cat_robot_bringup/share/ament_index/resource_index/packages
+[11.833s] symbolically linking /opt/cat_robot/src/ros2_ws/build/cat_robot_bringup/resource/cat_robot_bringup -> /opt/cat_robot/src/ros2_ws/install/cat_robot_bringup/share/ament_index/resource_index/packages
+[11.833s] symbolically linking /opt/cat_robot/src/ros2_ws/build/cat_robot_bringup/package.xml -> /opt/cat_robot/src/ros2_ws/install/cat_robot_bringup/share/cat_robot_bringup
+[11.834s] creating /opt/cat_robot/src/ros2_ws/install/cat_robot_bringup/share/cat_robot_bringup/launch
+[11.834s] symbolically linking /opt/cat_robot/src/ros2_ws/build/cat_robot_bringup/launch/roomba.launch.py -> /opt/cat_robot/src/ros2_ws/install/cat_robot_bringup/share/cat_robot_bringup/launch
+[11.834s] symbolically linking /opt/cat_robot/src/ros2_ws/build/cat_robot_bringup/launch/lidar.launch.py -> /opt/cat_robot/src/ros2_ws/install/cat_robot_bringup/share/cat_robot_bringup/launch
+[11.834s] symbolically linking /opt/cat_robot/src/ros2_ws/build/cat_robot_bringup/launch/slam.launch.py -> /opt/cat_robot/src/ros2_ws/install/cat_robot_bringup/share/cat_robot_bringup/launch
+[11.837s] symbolically linking /opt/cat_robot/src/ros2_ws/build/cat_robot_bringup/launch/system.launch.py -> /opt/cat_robot/src/ros2_ws/install/cat_robot_bringup/share/cat_robot_bringup/launch
+[11.837s] symbolically linking /opt/cat_robot/src/ros2_ws/build/cat_robot_bringup/launch/ui_bridge.launch.py -> /opt/cat_robot/src/ros2_ws/install/cat_robot_bringup/share/cat_robot_bringup/launch
+[11.837s] creating /opt/cat_robot/src/ros2_ws/install/cat_robot_bringup/share/cat_robot_bringup/config
+[11.837s] symbolically linking /opt/cat_robot/src/ros2_ws/build/cat_robot_bringup/config/slam_params.yaml -> /opt/cat_robot/src/ros2_ws/install/cat_robot_bringup/share/cat_robot_bringup/config
+[12.002s] Invoked command in '/opt/cat_robot/src/ros2_ws/build/cat_robot_bringup' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/opt/cat_robot/src/ros2_ws/build/cat_robot_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/opt/cat_robot/src/ros2_ws/install/cat_robot_bringup/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /opt/cat_robot/src/ros2_ws/build/cat_robot_bringup/build --no-deps symlink_data

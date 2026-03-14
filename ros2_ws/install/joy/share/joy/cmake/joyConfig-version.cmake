@@ -1,0 +1,1 @@
+/opt/cat_robot/src/ros2_ws/build/joy/ament_cmake_core/joyConfig-version.cmake

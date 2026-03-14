@@ -1,0 +1,1 @@
+/opt/cat_robot/src/ros2_ws/src/diagnostics/diagnostic_common_diagnostics/diagnostic_common_diagnostics/__init__.py

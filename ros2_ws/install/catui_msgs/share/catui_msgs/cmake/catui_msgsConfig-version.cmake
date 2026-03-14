@@ -1,0 +1,1 @@
+/opt/cat_robot/src/ros2_ws/build/catui_msgs/ament_cmake_core/catui_msgsConfig-version.cmake

@@ -1,0 +1,33 @@
+[ 20%] Built target gtest
+[ 40%] Built target gtest_main
+[ 50%] [32mBuilding CXX object CMakeFiles/influx_component.dir/src/influxdb.cpp.o[0m
+[ 70%] Built target influx
+[ 80%] [32m[1mLinking CXX shared library libinflux_component.so[0m
+[ 80%] Built target influx_component
+[ 90%] [32m[1mLinking CXX executable unit_tests[0m
+[100%] Built target unit_tests
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /opt/cat_robot/src/ros2_ws/install/diagnostic_remote_logging/lib/diagnostic_remote_logging/influx
+-- Up-to-date symlink: /opt/cat_robot/src/ros2_ws/install/diagnostic_remote_logging/share/ament_index/resource_index/package_run_dependencies/diagnostic_remote_logging
+-- Up-to-date symlink: /opt/cat_robot/src/ros2_ws/install/diagnostic_remote_logging/share/ament_index/resource_index/parent_prefix_path/diagnostic_remote_logging
+-- Up-to-date symlink: /opt/cat_robot/src/ros2_ws/install/diagnostic_remote_logging/share/diagnostic_remote_logging/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /opt/cat_robot/src/ros2_ws/install/diagnostic_remote_logging/share/diagnostic_remote_logging/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /opt/cat_robot/src/ros2_ws/install/diagnostic_remote_logging/share/diagnostic_remote_logging/environment/path.sh
+-- Up-to-date symlink: /opt/cat_robot/src/ros2_ws/install/diagnostic_remote_logging/share/diagnostic_remote_logging/environment/path.dsv
+-- Up-to-date symlink: /opt/cat_robot/src/ros2_ws/install/diagnostic_remote_logging/share/diagnostic_remote_logging/local_setup.bash
+-- Up-to-date symlink: /opt/cat_robot/src/ros2_ws/install/diagnostic_remote_logging/share/diagnostic_remote_logging/local_setup.sh
+-- Up-to-date symlink: /opt/cat_robot/src/ros2_ws/install/diagnostic_remote_logging/share/diagnostic_remote_logging/local_setup.zsh
+-- Up-to-date symlink: /opt/cat_robot/src/ros2_ws/install/diagnostic_remote_logging/share/diagnostic_remote_logging/local_setup.dsv
+-- Symlinking: /opt/cat_robot/src/ros2_ws/install/diagnostic_remote_logging/share/diagnostic_remote_logging/package.dsv
+-- Up-to-date symlink: /opt/cat_robot/src/ros2_ws/install/diagnostic_remote_logging/share/ament_index/resource_index/packages/diagnostic_remote_logging
+-- Up-to-date symlink: /opt/cat_robot/src/ros2_ws/install/diagnostic_remote_logging/share/ament_index/resource_index/rclcpp_components/diagnostic_remote_logging
+-- Up-to-date symlink: /opt/cat_robot/src/ros2_ws/install/diagnostic_remote_logging/share/diagnostic_remote_logging/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date symlink: /opt/cat_robot/src/ros2_ws/install/diagnostic_remote_logging/share/diagnostic_remote_logging/cmake/ament_cmake_export_targets-extras.cmake
+-- Up-to-date symlink: /opt/cat_robot/src/ros2_ws/install/diagnostic_remote_logging/share/diagnostic_remote_logging/cmake/diagnostic_remote_loggingConfig.cmake
+-- Up-to-date symlink: /opt/cat_robot/src/ros2_ws/install/diagnostic_remote_logging/share/diagnostic_remote_logging/cmake/diagnostic_remote_loggingConfig-version.cmake
+-- Up-to-date symlink: /opt/cat_robot/src/ros2_ws/install/diagnostic_remote_logging/share/diagnostic_remote_logging/package.xml
+-- Installing: /opt/cat_robot/src/ros2_ws/install/diagnostic_remote_logging/lib/libinflux_component.so
+-- Set non-toolchain portion of runtime path of "/opt/cat_robot/src/ros2_ws/install/diagnostic_remote_logging/lib/libinflux_component.so" to ""
+-- Up-to-date: /opt/cat_robot/src/ros2_ws/install/diagnostic_remote_logging/share/diagnostic_remote_logging/cmake/export_influx_componentExport.cmake
+-- Up-to-date: /opt/cat_robot/src/ros2_ws/install/diagnostic_remote_logging/share/diagnostic_remote_logging/cmake/export_influx_componentExport-noconfig.cmake

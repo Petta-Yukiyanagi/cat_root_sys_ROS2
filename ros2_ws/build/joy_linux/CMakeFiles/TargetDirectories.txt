@@ -1,0 +1,10 @@
+/opt/cat_robot/src/ros2_ws/build/joy_linux/CMakeFiles/uninstall.dir
+/opt/cat_robot/src/ros2_ws/build/joy_linux/CMakeFiles/joy_linux_uninstall.dir
+/opt/cat_robot/src/ros2_ws/build/joy_linux/CMakeFiles/joy_linux_node.dir
+/opt/cat_robot/src/ros2_ws/build/joy_linux/CMakeFiles/test.dir
+/opt/cat_robot/src/ros2_ws/build/joy_linux/CMakeFiles/edit_cache.dir
+/opt/cat_robot/src/ros2_ws/build/joy_linux/CMakeFiles/rebuild_cache.dir
+/opt/cat_robot/src/ros2_ws/build/joy_linux/CMakeFiles/list_install_components.dir
+/opt/cat_robot/src/ros2_ws/build/joy_linux/CMakeFiles/install.dir
+/opt/cat_robot/src/ros2_ws/build/joy_linux/CMakeFiles/install/local.dir
+/opt/cat_robot/src/ros2_ws/build/joy_linux/CMakeFiles/install/strip.dir

@@ -1,0 +1,6 @@
+{
+  "package_name": "catui_msgs",
+  "non_idl_tuples": [
+    "/opt/cat_robot/src/ros2_ws/src/catui_msgs:msg/CatUICommand.msg"
+  ]
+}

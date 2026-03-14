@@ -1,0 +1,1 @@
+/opt/cat_robot/src/ros2_ws/build/catui_msgs/rosidl_generator_cpp/catui_msgs/msg/detail/cat_ui_command__traits.hpp

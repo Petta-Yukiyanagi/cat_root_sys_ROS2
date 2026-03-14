@@ -1,0 +1,237 @@
+<?xml version="1.0"?>
+<robot name="Print">
+
+    <!-- ========================================= -->
+    <!--   Gazebo 用のルートリンク（水平に保つ）  -->
+    <!-- ========================================= -->
+
+    <!-- Gazebo が地面とみなす水平リンク（原点） -->
+    <link name="base_footprint"/>
+
+    <!-- タイヤ半径 65mm = 0.065m ぶん上に持ち上げる -->
+    <joint name="base_footprint_to_base_link" type="fixed">
+        <parent link="base_footprint"/>
+        <child  link="base_link"/>
+        <origin xyz="0 0 0.065" rpy="0 0 0"/>
+    </joint>
+
+    <!-- ============================= -->
+    <!--            LINKS              -->
+    <!-- ============================= -->
+
+    <!-- 右車輪 -->
+    <link name="right">
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="1.0"/>
+            <inertia ixx="0.01" iyy="0.01" izz="0.01"
+                     ixy="0" iyz="0" ixz="0"/>
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://cat_robot_bringup/meshes/right_wheel.stl"
+                      scale="0.001 0.001 0.001"/>
+            </geometry>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://cat_robot_bringup/meshes/right_wheel.stl"
+                      scale="0.001 0.001 0.001"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <!-- 前輪 -->
+    <link name="flont">
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="1.0"/>
+            <inertia ixx="0.01" iyy="0.01" izz="0.01"
+                     ixy="0" iyz="0" ixz="0"/>
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://cat_robot_bringup/meshes/flont_wheel.stl"
+                      scale="0.001 0.001 0.001"/>
+            </geometry>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://cat_robot_bringup/meshes/flont_wheel.stl"
+                      scale="0.001 0.001 0.001"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <!-- ふた -->
+    <link name="futa">
+        <inertial>
+            <!-- ふた本体の重さは軽め -->
+            <origin xyz="0 0.15 0.6" rpy="0 0 0"/>
+            <mass value="0.5"/>
+            <inertia ixx="0.02" iyy="0.02" izz="0.02"
+                     ixy="0" iyz="0" ixz="0"/>
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://cat_robot_bringup/meshes/futa_1.stl"
+                      scale="0.001 0.001 0.001"/>
+            </geometry>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://cat_robot_bringup/meshes/futa_1.stl"
+                      scale="0.001 0.001 0.001"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <!-- 左車輪 -->
+    <link name="left">
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="1.0"/>
+            <inertia ixx="0.01" iyy="0.01" izz="0.01"
+                     ixy="0" iyz="0" ixz="0"/>
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://cat_robot_bringup/meshes/left_wheel.stl"
+                      scale="0.001 0.001 0.001"/>
+            </geometry>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://cat_robot_bringup/meshes/left_wheel.stl"
+                      scale="0.001 0.001 0.001"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <!-- 本体 -->
+    <link name="base_link">
+        <inertial>
+            <!-- ★ 本体の重心を「後輪寄り & 低め」に設定 -->
+            <origin xyz="0 0.20 0.20" rpy="0 0 0"/>
+            <mass value="15.0"/>
+            <inertia ixx="0.8" iyy="0.8" izz="0.8"
+                     ixy="0" iyz="0" ixz="0"/>
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://cat_robot_bringup/meshes/base_link.stl"
+                      scale="0.001 0.001 0.001"/>
+            </geometry>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://cat_robot_bringup/meshes/base_link.stl"
+                      scale="0.001 0.001 0.001"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <!-- 見えないおもり（後輪側に付けて安定させる） -->
+    <link name="ballast">
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="8.0"/>
+            <inertia ixx="0.1" iyy="0.1" izz="0.1"
+                     ixy="0" iyz="0" ixz="0"/>
+        </inertial>
+        <!-- visual/collision は無し：重さだけを足す -->
+    </link>
+
+    <!-- ============================= -->
+    <!--            JOINTS             -->
+    <!-- ============================= -->
+
+    <!-- 右車輪 joint -->
+    <joint name="right_wheel_joint" type="continuous">
+        <parent link="base_link"/>
+        <child  link="right"/>
+        <origin xyz="0.225 0.350 0" rpy="0 0 0"/>
+        <axis xyz="1 0 0"/>
+        <dynamics damping="10.0" friction="1.0"/>
+    </joint>
+
+    <!-- 前輪 joint -->
+    <joint name="front_wheel_joint" type="fixed">
+        <parent link="base_link"/>
+        <child  link="flont"/>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <axis xyz="1 0 0"/>
+        <dynamics damping="10.0" friction="1.0"/>
+    </joint>
+
+    <!-- 左車輪 joint -->
+    <joint name="left_wheel_joint" type="continuous">
+        <parent link="base_link"/>
+        <child  link="left"/>
+        <origin xyz="-0.225 0.350 0" rpy="0 0 0"/>
+        <axis xyz="1 0 0"/>
+        <dynamics damping="10.0" friction="1.0"/>
+    </joint>
+
+    <!-- ふた は固定 -->
+    <joint name="futa_fixed" type="fixed">
+        <parent link="base_link"/>
+        <child  link="futa"/>
+        <origin xyz="-0.168295 0.291325 1.02653" rpy="0 0 0"/>
+    </joint>
+
+    <!-- おもり(ballast)を「後輪寄り & 低め」に固定 -->
+    <joint name="ballast_joint" type="fixed">
+        <parent link="base_link"/>
+        <child  link="ballast"/>
+        <origin xyz="0 0.30 0.05" rpy="0 0 0"/>
+    </joint>
+
+    <!-- ============================= -->
+    <!--   Gazebo(ROS2 Diff Drive)     -->
+    <!-- ============================= -->
+    <gazebo>
+        <plugin name="diff_drive" filename="libgazebo_ros_diff_drive.so">
+
+            <!-- Wheel Information -->
+            <left_joint>left_wheel_joint</left_joint>
+            <right_joint>right_wheel_joint</right_joint>
+            <wheel_separation>0.45</wheel_separation>
+            <!-- 直径 130mm = 0.13m -->
+            <wheel_diameter>0.13</wheel_diameter>
+
+            <!-- Limits（とりあえず大きめ） -->
+            <max_wheel_torque>200</max_wheel_torque>
+            <max_wheel_acceleration>10.0</max_wheel_acceleration>
+
+            <!-- Output / ROS 関連 -->
+            <command_topic>cmd_vel</command_topic>
+            <odometry_topic>odom</odometry_topic>
+            <odometry_frame>odom</odometry_frame>
+            <robot_base_frame>base_link</robot_base_frame>
+            <publish_odom>true</publish_odom>
+            <publish_odom_tf>true</publish_odom_tf>
+            <publish_wheel_tf>true</publish_wheel_tf>
+        </plugin>
+
+    </gazebo>
+
+    <link name="laser_frame"/>
+
+    <joint name="laser_joint" type="fixed">
+        <parent link="base_link"/>
+        <child  link="laser_frame"/>
+        <origin xyz="0 0 0.2" rpy="0 0 0"/>
+    </joint>
+
+</robot>
