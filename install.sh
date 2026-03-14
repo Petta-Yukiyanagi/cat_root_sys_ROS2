@@ -108,17 +108,13 @@ source "$ROS_ROOT/setup.bash" || true
 # build Cyclone DDS from source
 # =========================================================
 echo "[INFO] checking Cyclone DDS..."
-
+ 
 # 既にapt等でROS_ROOTが/opt/ros/humbleになっている場合は、ワークスペースを作成
-if [ "$ROS_ROOT" = "/opt/ros/humble" ]; then
-    DDS_WS="$HOME/ros2_humble"
-    mkdir -p "$DDS_WS/src"
-else
-    DDS_WS="$HOME/ros2_humble"
-fi
-
+DDS_WS="$HOME/ros2_humble"
+mkdir -p "$DDS_WS/src"
+ 
 cd "$DDS_WS" || exit 1
-
+ 
 if [ ! -d "src/cyclonedds" ]; then
     echo "[INFO] cloning cyclonedds..."
     git clone https://github.com/eclipse-cyclonedds/cyclonedds.git -b releases/0.10.x src/cyclonedds
@@ -130,15 +126,19 @@ if [ ! -d "src/rmw_cyclonedds" ]; then
 fi
 
 # インストールディレクトリにrmw_cyclonedds_cppがなければビルド
-if [ ! -d "install/rmw_cyclonedds_cpp" ]; then
+if [ ! -d "$DDS_WS/install/rmw_cyclonedds_cpp" ]; then
     echo "[INFO] building Cyclone DDS..."
+    export ROS_OS_OVERRIDE=ubuntu:jammy
+    export ROS_DISTRO=humble
     source "$ROS_ROOT/setup.bash" || true
-    colcon build --symlink-install --packages-select cyclonedds rmw_cyclonedds_cpp
+    colcon build --symlink-install --packages-select cyclonedds rmw_cyclonedds_cpp --cmake-args -DBUILD_TESTING=OFF --parallel-workers 2
 fi
 
-# Cyclone DDSを含めた環境を再度読み込み
-source "$DDS_WS/install/setup.bash" || true
-ROS_ROOT="$DDS_WS/install"
+# ビルドした Cyclone DDS をこの後の処理（ros2_wsのビルド等）でも使えるように反映
+if [ -f "$DDS_WS/install/setup.bash" ]; then
+    source "$DDS_WS/install/setup.bash"
+    ROS_ROOT="$DDS_WS/install"
+fi
 
 # =========================================================
 # install directory
@@ -294,26 +294,21 @@ fi
 # =========================================================
 # CAT UI setup
 # =========================================================
-
 echo "[INFO] configuring CAT UI..."
-
+ 
 cd $INSTALL_DIR/src
-
-if [ -d "ui/CAT-UI-ROS2node" ]; then
-    cd ui/CAT-UI-ROS2node
-elif [ -d "ui/catui/CAT-UI-ROS2node" ]; then
-    cd ui/catui/CAT-UI-ROS2node
-elif [ -d "CAT-UI-ROS2node" ]; then
-    cd CAT-UI-ROS2node
+ 
+UI_PATH=$(find $INSTALL_DIR/src -name "CAT-UI-ROS2node" -type d | head -n 1)
+if [ -n "$UI_PATH" ]; then
+    cd "$UI_PATH"
+    if [ -f "./CAT-UI" ]; then
+        chmod +x CAT-UI
+    fi
+    mkdir -p data/ipc
+    chmod 1777 data/ipc
 else
-    echo "[ERROR] CAT-UI-ROS2node not found"
-    exit 1
+    echo "[WARN] CAT-UI-ROS2node not found, skipping UI config"
 fi
-
-chmod +x CAT-UI
-
-mkdir -p data/ipc
-chmod 1777 data/ipc
 
 # =========================================================
 # ROS environment (.bashrc)
